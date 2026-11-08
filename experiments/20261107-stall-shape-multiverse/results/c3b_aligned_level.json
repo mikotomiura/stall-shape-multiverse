@@ -1,0 +1,96 @@
+{
+ "CS1 2019": {
+  "le30": {
+   "writer_median": 0.14524408656265728,
+   "writers": 459,
+   "row_share": 0.5366052865191452
+  },
+  "le60": {
+   "writer_median": 0.16608432331702772,
+   "writers": 459,
+   "row_share": 0.6438263597803431
+  },
+  "le180": {
+   "writer_median": 0.1895238095238095,
+   "writers": 459,
+   "row_share": 0.8044345876022108
+  },
+  "all": {
+   "writer_median": 0.20205841446453407,
+   "writers": 459,
+   "row_share": 1.0
+  }
+ },
+ "CS1 2021": {
+  "le30": {
+   "writer_median": 0.1932633903920486,
+   "writers": 31,
+   "row_share": 0.38182041365261926
+  },
+  "le60": {
+   "writer_median": 0.22405032968972605,
+   "writers": 31,
+   "row_share": 0.48568377437168897
+  },
+  "le180": {
+   "writer_median": 0.25074009577710055,
+   "writers": 31,
+   "row_share": 0.6668193597127271
+  },
+  "all": {
+   "writer_median": 0.26824959816668525,
+   "writers": 31,
+   "row_share": 1.0
+  }
+ },
+ "CoAuthor": {
+  "le30": {
+   "writer_median": 0.027807630306286944,
+   "writers": 41,
+   "row_share": 0.9480684590265498
+  },
+  "le60": {
+   "writer_median": 0.027979215439958887,
+   "writers": 41,
+   "row_share": 0.9720833279553932
+  },
+  "le180": {
+   "writer_median": 0.02787310035716787,
+   "writers": 41,
+   "row_share": 0.9779766898563444
+  },
+  "all": {
+   "writer_median": 0.030264629146477824,
+   "writers": 41,
+   "row_share": 1.0
+  }
+ },
+ "KLiCKe": {
+  "le30": {
+   "writer_median": 0.029981797110010304,
+   "writers": 4908,
+   "row_share": 0.8259828692660464
+  },
+  "le60": {
+   "writer_median": 0.03394655516590671,
+   "writers": 4908,
+   "row_share": 0.8875923392784693
+  },
+  "le180": {
+   "writer_median": 0.03262643705350807,
+   "writers": 4908,
+   "row_share": 0.959651456514339
+  },
+  "all": {
+   "writer_median": 0.031610052645971616,
+   "writers": 4908,
+   "row_share": 1.0
+  }
+ },
+ "ratio_cs1_2019_over_klicke": {
+  "le30": 4.8444089602008304,
+  "le60": 4.892523630316102,
+  "le180": 5.808903044270091,
+  "all": 6.392220118313672
+ }
+}

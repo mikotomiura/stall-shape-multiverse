@@ -1,0 +1,204 @@
+\section{Data and method}
+\label{sec:method}
+
+\subsection{Data}
+\label{sec:data}
+
+We used four keystroke datasets released for research, from three sources (Table~\ref{tab:data}). Two are editions of an
+introductory programming (CS1) course at a US university, in which students wrote Python in a browser-based editor and
+every edit was logged in the same format \cite{edwards2023cs1}; the 2019 and 2021 editions share the course, the
+editor and the recording. CS1 records edit events rather than key presses; an insertion of one character became a
+character press and a deletion a deletion press (S2). KLiCKe \cite{tian2025klicke} is a corpus of argumentative essays
+written in 2022 by adults in the United States, recruited online, with English as a first or second language; each
+wrote one essay on one of four prompts adapted from the SAT, with a 30-minute timer and the submit button disabled until
+30 minutes had passed. Trained raters scored each essay on a six-point holistic rubric (the mean of at least two raters, in
+steps of 0.5; weighted Cohen's $\kappa$ 0.60 before and 0.76 after discussing scores two or more points apart)
+\cite{tian2025klicke}. The task, a timed argumentative essay scored on a holistic rubric, has the format of writing
+assessment in education, although the writers were not sampled from a course. CoAuthor is a dataset of creative and argumentative writing with suggestions from a language model
+\cite{lee2022coauthor}; it is writing outside an educational setting and enters as a contrast with a different
+recording, not as an educational sample. The method needs two fields per key press: its time and whether it inserted
+or deleted a character.
+
+A writer is a student (CS1) or a participant (KLiCKe, CoAuthor). We excluded the units of writers with less than 10
+minutes of observation (the time within the observation intervals, not the time on the KLiCKe timer) and, in the count analyses, units with
+less than 5 minutes of exposure. KLiCKe is the only dataset with an outcome that we used: in the 2019 CS1 release the
+grade table was withdrawn by the data authors as erroneous, and the 2021 grades were not used because only 31 writers
+were on the seen side. Holdouts set aside in earlier work have no confirmatory role here (Table~\ref{tab:data}).
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{The four datasets. Units are assignments (CS1), essays (KLiCKe) and sessions (CoAuthor). Onsets are the
+stall onsets under the baseline definition.}
+\label{tab:data}
+\begin{tabularx}{\textwidth}{@{}l X r r r X X@{}}
+\toprule
+Dataset & Writers and setting; one event & Writers & Units & Onsets & Outcome used & Access and holdout \\
+\midrule
+CS1 2019 & students of a CS1 course writing Python; one logged edit & 459 & 1,469 & 33,710 & none (grade table
+withdrawn) & from the data authors on request, aggregate values only; 146 held-out writers opened earlier, included \\
+CS1 2021 & same course, editor and recording & 31 & 177 & 6,217 & none (31 writers) & as CS1 2019; 13 held-out
+writers not opened \\
+KLiCKe & adults writing one argumentative essay; one key press & 4,908 & 4,908 & 33,003 & holistic score (1--6)
+& public, free use with citation \cite{inputlog2026community}; 1,498 held-out writers opened earlier, included \\
+CoAuthor & adults writing with model suggestions; one key press & 41 & 1,155 & 1,518 & none & public, released for
+research; 18 held-out writers (288 sessions) not opened \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Relation to the companion study.} A companion study \cite{miura2026runup} tested, on a holdout, whether an
+estimator's signals distinguish the run-up to a stall from a short pause. The two studies share the baseline
+definition, the conversion of CS1, the observation intervals written by that estimator and the opened holdouts, so
+baseline rates and part of $\varphi$ can coincide with values reported there. Everything else here is new: the 89
+definitions and the pause family, the intervals, the score association and its adjustments, the overdispersion within
+writers and the length decomposition (S8).
+
+\subsection{The baseline definition and the detector}
+\label{sec:detector}
+
+A stall is detected from three ingredients (Figure~\ref{fig:detector}). Let \emph{condition A} hold at time $t$ when,
+in the window $(t - W, t]$, the number of character presses minus the number of deletion presses is less than one. When
+condition A rises from false to true at time $s$ and stays true until $t_0 = s + \theta$, an onset is raised at $t_0$;
+$\theta$ is the value at $s$ and is held until $t_0$, condition A is evaluated only from $W$ after the start of an
+observation interval, $t_0$ must fall within the interval, and a new onset requires condition A to become false and
+rise again.
+The stall lasts from $s$ to the first character press after $t_0$ in the same observation interval (the
+resumption); its length is
+measured from $t_0$, so it can be short if typing resumes soon after the onset. Under the characters-only rule an onset
+requires no character press for at least $W + \theta$, more than 15~s in our grid; under the net rule, deletions can make
+condition A hold while characters are still being typed, so the label is a stop in net character production and
+retyping counts as a stop. The detector does not reach pauses of a few seconds, which the pause family below covers. The \emph{baseline definition} is
+the default of the detector's reference implementation: $W = 30$~s, $\theta$ the 0.99 nearest-rank quantile of the
+writer's inter-keystroke intervals so far in the unit (defined once 100 intervals exist), the net rule for condition A,
+and the default observation intervals. It is the definition of the companion study's appendix and was fixed before any
+KLiCKe score was read. The detector reproduced the onsets of the reference implementation in every unit of the four
+datasets (S2).
+
+The default observation intervals are the spans in which the companion study's estimator, re-run on the key stream,
+wrote its per-second rows; they cover nearly all of a KLiCKe essay, with holes of a few seconds (S2). Because they
+depend on the estimator, the grid also contains two segmentations defined by key times alone, and every result is
+reported for them. A writer-quantile $\theta$ is undefined before the unit's 100th interval, so no stall can start in
+that time (3.2--10.3\% of the exposure), whereas a fixed $\theta$ can; we repeated the comparisons with all
+definitions restricted to the time after the 100th interval (S2). Condition A is evaluated only from $W$ after the
+start of an observation interval, so no definition can detect a stall in the first $W$ seconds of an interval
+(0.5--10.9\% of the exposure across datasets, segmentations and windows); we also repeated the comparisons with each
+interval starting 60~s after its start and not before the 100th interval (S2).
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[x=0.11cm,y=0.5cm,font=\footnotesize]
+  \draw[->] (0,0) -- (120,0) node[right] {time};
+  \foreach \x in {2,5,7,10,13,15,18,21,24,27} \draw (\x,0) -- (\x,0.45);
+  \foreach \x in {96,99,103,106,110} \draw (\x,0) -- (\x,0.45);
+  \node[above] at (14,0.5) {character presses};
+  \draw[fill=figband,draw=none] (27,-0.35) rectangle (57,-0.95);
+  \node at (42,-0.65) {$W$};
+  \draw[thick] (57,0.3) -- (57,-2.2) node[below] {$s$};
+  \draw[thick] (81,0.3) -- (81,-2.2) node[below] {$t_0$};
+  \draw[<->] (57,-1.55) -- node[above] {$\theta$} (81,-1.55);
+  \draw[thick] (96,0.3) -- (96,-2.2) node[below] {resumption};
+  \draw[decorate,decoration={brace,mirror,amplitude=4pt}] (57,-3.3) -- node[below=4pt] {stall (length measured
+  from $t_0$)} (96,-3.3);
+\end{tikzpicture}
+\caption{The stall detector. Condition A (fewer than one net character press in the window $W$, shaded) becomes true at
+$s$; if it stays true for $\theta$, an onset is raised at $t_0 = s + \theta$. The stall ends at the next character
+press.}
+\label{fig:detector}
+\end{figure}
+
+\subsection{The four axes and the 89 definitions}
+\label{sec:grid}
+
+We varied four choices that every such detector has to make, each over levels drawn from prior practice or set around
+the default (Table~\ref{tab:grid}). The full crossing gives 90 definitions; with the baseline removed, 89 remain, and
+all proportions below are out of 89 and describe this grid, not a sample of possible definitions. The two families of
+$\theta$ are different constructs: a quantile of the writer's own intervals marks a pause that is long \emph{for this
+writer}, a fixed number of seconds marks a pause that is long in absolute terms. We report them together because both
+are in use, and separately where they part (53 definitions with a writer quantile, 36 with fixed seconds).
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{The four axes of the stall detector. The baseline level is marked with an asterisk. The grid of default and
+precedented levels keeps the default window and condition, which have no use outside the detector, and the levels with
+precedent outside it: writer-relative thresholds as a kind, the 10-s threshold and the three segmentations (12
+definitions, including the baseline). A fixed $\theta$ is a hold after condition A rises, so a 10-s $\theta$ is not the
+same construct as a 10-s pause threshold.}
+\label{tab:grid}
+\begin{tabularx}{\textwidth}{@{}l l X@{}}
+\toprule
+Axis & Levels & Source of the levels \\
+\midrule
+Window $W$ & 15, 30$^\ast$, 60~s & 30~s is the default; 15 and 60~s are half and double the default; we found no
+use of a window length outside the detector \\
+Threshold $\theta$ & writer quantile 0.95, 0.99$^\ast$, 0.995; fixed 10, 30~s & writer-relative thresholds are in use
+(an ex-Gaussian bound per writer \cite{chukharev2014pauses}, ten times the within-word median \cite{guo2020scenario}),
+though not at these quantiles; fixed thresholds in writing span about 0.25--10~s \cite{torrance2024methods}, so 10~s
+has precedent and 30~s, set equal to the default window, has none \\
+Condition A & net$^\ast$ (characters $-$ deletions $< 1$); characters only ($< 1$) & whether deletions cancel character
+presses; neither rule has a use outside the detector \\
+Observation & default intervals$^\ast$; split at key-press gaps of 5~min; of 30~min & 5~min of inactivity as
+time-on-task \cite{hart2023time}; 30~min as a session timeout \cite{halfaker2015session} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{The pause family.} The second detector counts a pause whenever two consecutive key presses in the same
+observation interval are more than a threshold apart. We crossed two kinds of interval (between any two key presses,
+or between two character presses), three fixed thresholds (2, 5 and 10~s, within the range used in writing
+\cite{torrance2024methods}) and the three segmentations, for 18 definitions. We also computed 18 definitions with the
+writer's 0.95, 0.99 and 0.995 quantile over the unit as the threshold; such a threshold labels a fixed share of each
+writer's intervals, so its rate is close to that share times the writer's rate of key presses, and we report these as
+a control for the key-press rate rather than as pause labels (S3). The pause family is not a check of the stall
+results but the same diagnostic applied to a second detector.
+
+\subsection{What we measured}
+\label{sec:measures}
+
+\paragraph{Rates and ratios.} The rate is the number of stalls or pauses per observed hour, pooled over a dataset's
+units. For each definition we compared the rank order of the four datasets with the baseline order, and the ratio of
+the rates of each pair of datasets with the baseline ratio.
+
+\paragraph{The essay-score association.} In KLiCKe, the Spearman correlation of a writer's rate with the
+holistic score. Because the sample is large, weak correlations have intervals that exclude zero, so we also describe magnitudes,
+using $|\rho| < 0.1$ as negligible and 0.3 as moderate \cite{cohen1988power}.
+
+\paragraph{Adjustments.} Two partial Spearman correlations of score and rate: given typing speed, the median of a
+writer's intervals shorter than 2~s, measured six ways (S3); and given the essay's length in characters and the length
+of observation. Essay length is part of what raters judge, so the length-adjusted value is the association with the
+part of the rate that does not overlap with length, not an effect.
+
+\paragraph{Overdispersion within writers.} For sub-writer units (CS1 work blocks and assignments; CoAuthor sessions),
+the Pearson dispersion index $\varphi = \sum (n - \hat e)^2 / \hat e \,/\, (k - p)$, where the expected count $\hat e$ is
+the writer's own rate times the unit's exposure and $p$ the number of writers. $\varphi = 1$ is what counting at a
+constant rate within a writer would give; we read $\varphi$ as the departure from a constant rate, with 1.5 as a
+working threshold, not as a choice between count models, because the window of the detector, dependence between
+stalls and the mean structure all affect it (S4).
+
+\paragraph{Components of stall length.} A linear mixed model of log stall length with random effects of writer,
+assignment, day and work block (CS1; days are runs of blocks separated by gaps of 6~h or more) or of writer and
+session (CoAuthor), fitted by REML; we report the share of each level and of the residual, the stall-to-stall
+variation. Stalls that did not resume within their interval are excluded (S5). We do not report the analogous
+decomposition of counts, whose estimates did not recover simulated components (S6).
+
+\paragraph{Intervals.} All intervals are 95\% percentile intervals from 2,000 resamples of writers, with each
+writer's labels as detected. Two-stage intervals that also redraw the writer-quantile $\theta$ are a
+sensitivity analysis (S2). The interval of a
+definition shows sampling variation; the spread across definitions shows definitional variation, and we set the two
+side by side \cite{robitzsch2022multiverse}. Definitions share axes and are not independent, so we read counts as
+proportions of the grid and do not test the grid as a whole \cite{simonsohn2020specification}.
+
+\subsection{Status of the analyses}
+\label{sec:status}
+
+Every computation ran under conditions committed in the author's repository before it ran; these are not third-party
+registrations. S1 gives the order of the computations, including those added after seeing results,
+and the status of each conclusion. The speed covariate was chosen twice after seeing results, so the speed-adjusted values are exploratory. Three points bear
+on the claims. The criterion for a reversal of a rate ratio (25\% of the
+definitions for a pair) was set after the number of reversed point values per pair had been seen, and the pair committed
+to be reported first, the two CS1 editions, did not reach it. The criterion for a reversal of the score association
+required only one definition with an interval on the other side of zero, which is lenient, so we report the full
+distribution; requiring the point value to lie there as well, a rule added later, changed no count. Sizes, the
+reading by classes of interval and the grid of default and precedented levels were set after seeing the results.
+
+The author used Claude (Anthropic) to search the literature, to write the analysis scripts under these conditions and
+to check the numbers in the text against the result files; every number in the text was compared with the result files.

@@ -1,0 +1,3568 @@
+{
+ "summary": {
+  "CS1 2019": {
+   "n_cfg": 90,
+   "R1_holds_all": true,
+   "n_fail": 0,
+   "fail_cfgs": [],
+   "n_unconverged": 0,
+   "stall_share_range": [
+    0.8824632151819435,
+    0.9919735269338222
+   ],
+   "writer_share_range": [
+    0.0038156261980412443,
+    0.04803598981807403
+   ],
+   "min_margin": 0.8344272253638695
+  },
+  "CS1 2021": {
+   "n_cfg": 90,
+   "R1_holds_all": true,
+   "n_fail": 0,
+   "fail_cfgs": [],
+   "n_unconverged": 0,
+   "stall_share_range": [
+    0.8766366001878624,
+    0.999587905096618
+   ],
+   "writer_share_range": [
+    3.745327105141971e-10,
+    0.043122950059750864
+   ],
+   "min_margin": 0.8267316916096962
+  },
+  "CoAuthor": {
+   "n_cfg": 90,
+   "R1_holds_all": false,
+   "n_fail": 3,
+   "fail_cfgs": [
+    "W60_q0.995_ins_replay",
+    "W60_q0.995_ins_g5",
+    "W60_q0.995_ins_g30"
+   ],
+   "n_unconverged": 0,
+   "stall_share_range": [
+    0.42067389877891265,
+    0.9752461624440849
+   ],
+   "writer_share_range": [
+    4.27559058326923e-11,
+    0.31095862721757667
+   ],
+   "min_margin": -0.15865220239941874
+  }
+ },
+ "by_cfg": {
+  "W15_q0.95_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 91576,
+    "shares": {
+     "writer": 0.016900297768874622,
+     "block": 0.021994823755571203,
+     "day": 0.0026261779482332753,
+     "unit": 2.358652984670584e-10,
+     "stall": 0.9584787002914557
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9364838765358845
+   },
+   "CS1 2021": {
+    "n_lengths": 18202,
+    "shares": {
+     "writer": 0.01772782978623648,
+     "block": 0.030463521465755046,
+     "day": 0.007390060353684008,
+     "unit": 8.500347409312754e-10,
+     "stall": 0.9444185875442896
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9139550660785346
+   },
+   "CoAuthor": {
+    "n_lengths": 7721,
+    "shares": {
+     "writer": 0.08343976784847801,
+     "unit": 0.030906862871868352,
+     "stall": 0.8856533692796535
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.8022136014311756
+   }
+  },
+  "W15_q0.95_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 90617,
+    "shares": {
+     "writer": 0.013639800258930397,
+     "block": 0.018038117509017022,
+     "day": 0.0015270801879252475,
+     "unit": 0.0008825901994070583,
+     "stall": 0.9659124118447203
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9478742943357032
+   },
+   "CS1 2021": {
+    "n_lengths": 17861,
+    "shares": {
+     "writer": 0.013109063898195692,
+     "block": 0.025483732065144694,
+     "day": 0.0029694641177746713,
+     "unit": 0.000706729488239509,
+     "stall": 0.9577310104306455
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9322472783655008
+   },
+   "CoAuthor": {
+    "n_lengths": 7776,
+    "shares": {
+     "writer": 0.08185107310719746,
+     "unit": 0.02980440886605272,
+     "stall": 0.8883445180267497
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8064934449195523
+   }
+  },
+  "W15_q0.95_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 93385,
+    "shares": {
+     "writer": 0.01793931335075137,
+     "block": 0.022542149180740826,
+     "day": 0.0025453488843376884,
+     "unit": 6.511201923067147e-09,
+     "stall": 0.9569731820729681
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9344310328922273
+   },
+   "CS1 2021": {
+    "n_lengths": 18639,
+    "shares": {
+     "writer": 0.019153089168161958,
+     "block": 0.027816546319131333,
+     "day": 0.0081276895474367,
+     "unit": 1.1597140258070652e-09,
+     "stall": 0.944902673805556
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9170861274864247
+   },
+   "CoAuthor": {
+    "n_lengths": 7778,
+    "shares": {
+     "writer": 0.08326204219816338,
+     "unit": 0.029877781186699794,
+     "stall": 0.8868601766151368
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8035981344169735
+   }
+  },
+  "W15_q0.95_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 68150,
+    "shares": {
+     "writer": 0.014865010457074107,
+     "block": 0.01968313145054599,
+     "day": 0.0016013471600103833,
+     "unit": 9.612492275709042e-10,
+     "stall": 0.9638505099711203
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9441673785205743
+   },
+   "CS1 2021": {
+    "n_lengths": 14769,
+    "shares": {
+     "writer": 0.011832799901400211,
+     "block": 0.038307417785430446,
+     "day": 1.668846330791811e-09,
+     "unit": 6.591908493598072e-10,
+     "stall": 0.9498597799851322
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9115523621997017
+   },
+   "CoAuthor": {
+    "n_lengths": 5709,
+    "shares": {
+     "writer": 0.1128365459751221,
+     "unit": 0.031841426157511614,
+     "stall": 0.8553220278673662
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7424854818922442
+   }
+  },
+  "W15_q0.95_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 67008,
+    "shares": {
+     "writer": 0.010015259572538036,
+     "block": 0.013627722363543959,
+     "day": 0.0011114648139534627,
+     "unit": 1.0184731741532254e-09,
+     "stall": 0.9752455522314913
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9616178298679474
+   },
+   "CS1 2021": {
+    "n_lengths": 14349,
+    "shares": {
+     "writer": 0.005923633870131357,
+     "block": 0.028351854965655437,
+     "day": 1.3659186299822264e-08,
+     "unit": 7.299102741424044e-10,
+     "stall": 0.9657244967751166
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9373726418094612
+   },
+   "CoAuthor": {
+    "n_lengths": 5760,
+    "shares": {
+     "writer": 0.11349441940631994,
+     "unit": 0.02980800158376811,
+     "stall": 0.856697579009912
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.743203159603592
+   }
+  },
+  "W15_q0.95_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 69764,
+    "shares": {
+     "writer": 0.01573221801778787,
+     "block": 0.01934126544867701,
+     "day": 0.002135997711219467,
+     "unit": 0.00040167751634428186,
+     "stall": 0.9623888413059714
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9430475758572944
+   },
+   "CS1 2021": {
+    "n_lengths": 15190,
+    "shares": {
+     "writer": 0.012410102697810428,
+     "block": 0.03451943569229828,
+     "day": 8.755263300777578e-10,
+     "unit": 2.42515742343409e-10,
+     "stall": 0.9530704604918492
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9185510247995509
+   },
+   "CoAuthor": {
+    "n_lengths": 5762,
+    "shares": {
+     "writer": 0.11735701685151,
+     "unit": 0.030458408927037446,
+     "stall": 0.8521845742214526
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7348275573699425
+   }
+  },
+  "W15_q0.99_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 41119,
+    "shares": {
+     "writer": 0.03603110725524725,
+     "block": 0.03156572420499559,
+     "day": 0.018082676780152077,
+     "unit": 0.003333488935938541,
+     "stall": 0.9109870028236665
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8749558955684192
+   },
+   "CS1 2021": {
+    "n_lengths": 6658,
+    "shares": {
+     "writer": 0.03452576285503742,
+     "block": 0.037907088498334594,
+     "day": 0.025224618352962094,
+     "unit": 0.0035116039505209916,
+     "stall": 0.8988309263431449
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8609238378448103
+   },
+   "CoAuthor": {
+    "n_lengths": 4561,
+    "shares": {
+     "writer": 0.08986901440593746,
+     "unit": 0.03167739200960976,
+     "stall": 0.8784535935844527
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7885845791785153
+   }
+  },
+  "W15_q0.99_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 40780,
+    "shares": {
+     "writer": 0.022844860895974484,
+     "block": 0.021375987247732476,
+     "day": 0.008552821807368813,
+     "unit": 0.0038588195034410075,
+     "stall": 0.9433675105454833
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9205226496495088
+   },
+   "CS1 2021": {
+    "n_lengths": 6601,
+    "shares": {
+     "writer": 0.015719266345453023,
+     "block": 0.02198275879882569,
+     "day": 0.004469824764370132,
+     "unit": 0.008955424181587943,
+     "stall": 0.9488727259097632
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9268899671109375
+   },
+   "CoAuthor": {
+    "n_lengths": 4541,
+    "shares": {
+     "writer": 0.09214555889332417,
+     "unit": 0.03103756092849386,
+     "stall": 0.8768168801781819
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7846713212848577
+   }
+  },
+  "W15_q0.99_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 41711,
+    "shares": {
+     "writer": 0.03733302347300442,
+     "block": 0.03432880938946134,
+     "day": 0.014973047434279742,
+     "unit": 0.004884333680273558,
+     "stall": 0.908480786022981
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8711477625499766
+   },
+   "CS1 2021": {
+    "n_lengths": 6745,
+    "shares": {
+     "writer": 0.03848095561505596,
+     "block": 0.04882213747765256,
+     "day": 0.01393918136287582,
+     "unit": 0.0061360230890801825,
+     "stall": 0.8926217024553355
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8437995649776829
+   },
+   "CoAuthor": {
+    "n_lengths": 4543,
+    "shares": {
+     "writer": 0.09299619596929945,
+     "unit": 0.031168942103295908,
+     "stall": 0.8758348619274047
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7828386659581053
+   }
+  },
+  "W15_q0.99_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 34986,
+    "shares": {
+     "writer": 0.029285533025199807,
+     "block": 0.02453113458782672,
+     "day": 0.015533362035121599,
+     "unit": 3.0464793355244363e-10,
+     "stall": 0.930649970047204
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9013644370220042
+   },
+   "CS1 2021": {
+    "n_lengths": 6166,
+    "shares": {
+     "writer": 0.032643603871686716,
+     "block": 0.029423848894105098,
+     "day": 0.033422836752474275,
+     "unit": 0.0001832393325087112,
+     "stall": 0.9043264711492252
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8709036343967509
+   },
+   "CoAuthor": {
+    "n_lengths": 3624,
+    "shares": {
+     "writer": 0.09832216355073936,
+     "unit": 0.03797523200675098,
+     "stall": 0.8637026044425096
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7653804408917702
+   }
+  },
+  "W15_q0.99_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 34207,
+    "shares": {
+     "writer": 0.01674144573566608,
+     "block": 0.010083553684991649,
+     "day": 0.0058514902732763035,
+     "unit": 1.1439634836183749e-09,
+     "stall": 0.9673235091621026
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9505820634264366
+   },
+   "CS1 2021": {
+    "n_lengths": 5984,
+    "shares": {
+     "writer": 0.014687416253937933,
+     "block": 0.006016964321807617,
+     "day": 0.01318833080401757,
+     "unit": 1.3988239706505952e-09,
+     "stall": 0.9661072872214128
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9514198709674749
+   },
+   "CoAuthor": {
+    "n_lengths": 3602,
+    "shares": {
+     "writer": 0.09855118668835641,
+     "unit": 0.03568103251858646,
+     "stall": 0.8657677807930572
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7672165941047008
+   }
+  },
+  "W15_q0.99_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 35551,
+    "shares": {
+     "writer": 0.03240889137049404,
+     "block": 0.025012709564630687,
+     "day": 0.010337841534168495,
+     "unit": 0.004547805558352985,
+     "stall": 0.9276927519723538
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8952838606018597
+   },
+   "CS1 2021": {
+    "n_lengths": 6245,
+    "shares": {
+     "writer": 0.03402058965628305,
+     "block": 0.0328607894523684,
+     "day": 0.023474673335032562,
+     "unit": 0.0035844253546904858,
+     "stall": 0.9060595222016256
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8720389325453425
+   },
+   "CoAuthor": {
+    "n_lengths": 3604,
+    "shares": {
+     "writer": 0.10206925785205626,
+     "unit": 0.03684409159820279,
+     "stall": 0.861086650549741
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7590173926976848
+   }
+  },
+  "W15_q0.995_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 24094,
+    "shares": {
+     "writer": 0.04605493835388455,
+     "block": 0.03760197362862242,
+     "day": 0.013817402634489247,
+     "unit": 0.014633812606625178,
+     "stall": 0.8878918727763786
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8418369344224941
+   },
+   "CS1 2021": {
+    "n_lengths": 3760,
+    "shares": {
+     "writer": 0.04167097070516531,
+     "block": 0.052985107167367644,
+     "day": 0.0017568313142098156,
+     "unit": 0.014110879932508577,
+     "stall": 0.8894762108807487
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8364911037133811
+   },
+   "CoAuthor": {
+    "n_lengths": 2927,
+    "shares": {
+     "writer": 0.08687607013246076,
+     "unit": 0.024639297217140584,
+     "stall": 0.8884846326503986
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.8016085625179378
+   }
+  },
+  "W15_q0.995_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 23990,
+    "shares": {
+     "writer": 0.02518861082178468,
+     "block": 0.02157844383906988,
+     "day": 0.004279777929540863,
+     "unit": 0.007432983118963355,
+     "stall": 0.9415201842906412
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9163315734688565
+   },
+   "CS1 2021": {
+    "n_lengths": 3833,
+    "shares": {
+     "writer": 0.012314937519076597,
+     "block": 0.003922110440065237,
+     "day": 1.089864495237424e-09,
+     "unit": 0.00841793849630027,
+     "stall": 0.9753450124546934
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9630300749356168
+   },
+   "CoAuthor": {
+    "n_lengths": 2891,
+    "shares": {
+     "writer": 0.0865019981770265,
+     "unit": 0.0211220766189052,
+     "stall": 0.8923759252040683
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.8058739270270417
+   }
+  },
+  "W15_q0.995_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 24376,
+    "shares": {
+     "writer": 0.04803598981807403,
+     "block": 0.04393490606554668,
+     "day": 0.01420372957737623,
+     "unit": 0.011362159357059599,
+     "stall": 0.8824632151819435
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8344272253638695
+   },
+   "CS1 2021": {
+    "n_lengths": 3806,
+    "shares": {
+     "writer": 0.043122950059750864,
+     "block": 0.04990490857816624,
+     "day": 0.018936747886839904,
+     "unit": 0.011398793287380641,
+     "stall": 0.8766366001878624
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8267316916096962
+   },
+   "CoAuthor": {
+    "n_lengths": 2893,
+    "shares": {
+     "writer": 0.0893963029941195,
+     "unit": 0.023320730816939007,
+     "stall": 0.8872829661889415
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.797886663194822
+   }
+  },
+  "W15_q0.995_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 21642,
+    "shares": {
+     "writer": 0.04503972556313464,
+     "block": 0.031558573895996124,
+     "day": 0.020389453218952382,
+     "unit": 0.0016523099063330984,
+     "stall": 0.9013599374155837
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8563202118524491
+   },
+   "CS1 2021": {
+    "n_lengths": 3551,
+    "shares": {
+     "writer": 0.03969258738404875,
+     "block": 0.03540778396432972,
+     "day": 0.005616184342426901,
+     "unit": 0.020910923510429596,
+     "stall": 0.898372520798765
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8586799334147162
+   },
+   "CoAuthor": {
+    "n_lengths": 2341,
+    "shares": {
+     "writer": 0.08838882685859549,
+     "unit": 0.033539907232390156,
+     "stall": 0.8780712659090144
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.7896824390504189
+   }
+  },
+  "W15_q0.995_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 21185,
+    "shares": {
+     "writer": 0.022814791005427458,
+     "block": 0.003270802570925429,
+     "day": 0.01395138255900054,
+     "unit": 1.8868362534156434e-10,
+     "stall": 0.959963023675963
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9371482326705355
+   },
+   "CS1 2021": {
+    "n_lengths": 3538,
+    "shares": {
+     "writer": 0.010208048638148422,
+     "block": 8.53589143670558e-10,
+     "day": 8.000430304277312e-10,
+     "unit": 0.002050082009631511,
+     "stall": 0.987741867698588
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9775338190604396
+   },
+   "CoAuthor": {
+    "n_lengths": 2306,
+    "shares": {
+     "writer": 0.07965122334786798,
+     "unit": 0.027389154991391777,
+     "stall": 0.8929596216607402
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8133083983128722
+   }
+  },
+  "W15_q0.995_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 21914,
+    "shares": {
+     "writer": 0.04679560831782908,
+     "block": 0.04108394749558828,
+     "day": 0.011068387550402852,
+     "unit": 0.0038997647674858344,
+     "stall": 0.8971522918686938
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8503566835508648
+   },
+   "CS1 2021": {
+    "n_lengths": 3582,
+    "shares": {
+     "writer": 0.04241332802729261,
+     "block": 0.04278189287342912,
+     "day": 0.017988216246078312,
+     "unit": 0.017259477683686866,
+     "stall": 0.8795570851695131
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.836775192296084
+   },
+   "CoAuthor": {
+    "n_lengths": 2308,
+    "shares": {
+     "writer": 0.08518675274097476,
+     "unit": 0.03047585455684797,
+     "stall": 0.8843373927021773
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7991506399612025
+   }
+  },
+  "W15_fix10s_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 69731,
+    "shares": {
+     "writer": 0.012255080833488498,
+     "block": 0.022981315834314908,
+     "day": 9.698016802735829e-11,
+     "unit": 6.248279682824692e-09,
+     "stall": 0.9647635969869368
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9417822811526219
+   },
+   "CS1 2021": {
+    "n_lengths": 16623,
+    "shares": {
+     "writer": 0.013830112622321573,
+     "block": 0.02415354714193277,
+     "day": 6.344694191137254e-10,
+     "unit": 4.1965356411321213e-10,
+     "stall": 0.9620163391816227
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9378627920396899
+   },
+   "CoAuthor": {
+    "n_lengths": 3654,
+    "shares": {
+     "writer": 0.13052419777368462,
+     "unit": 0.023507830367756322,
+     "stall": 0.845967971858559
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7154437740848744
+   }
+  },
+  "W15_fix10s_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 68592,
+    "shares": {
+     "writer": 0.008363634016764888,
+     "block": 0.016038448385083857,
+     "day": 3.5184332892264126e-09,
+     "unit": 1.9832679283777383e-09,
+     "stall": 0.9755979120964501
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9595594637113662
+   },
+   "CS1 2021": {
+    "n_lengths": 16111,
+    "shares": {
+     "writer": 0.008806602235463095,
+     "block": 0.01946009258982678,
+     "day": 1.237128495293557e-10,
+     "unit": 2.2871082418470496e-09,
+     "stall": 0.9717333027638889
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9522732101740622
+   },
+   "CoAuthor": {
+    "n_lengths": 3580,
+    "shares": {
+     "writer": 0.12602039492904413,
+     "unit": 0.016656878637994605,
+     "stall": 0.8573227264329613
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7313023315039171
+   }
+  },
+  "W15_fix10s_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 71902,
+    "shares": {
+     "writer": 0.012795386986281403,
+     "block": 0.024294912521623097,
+     "day": 4.703990408176818e-09,
+     "unit": 7.044770700722889e-10,
+     "stall": 0.962909695083628
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9386147825620049
+   },
+   "CS1 2021": {
+    "n_lengths": 17329,
+    "shares": {
+     "writer": 0.014890702377914199,
+     "block": 0.02436673294692501,
+     "day": 9.680628714099391e-11,
+     "unit": 1.0593985469579028e-10,
+     "stall": 0.9607425644724147
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9363758315254896
+   },
+   "CoAuthor": {
+    "n_lengths": 3582,
+    "shares": {
+     "writer": 0.12978946211389777,
+     "unit": 0.01761816275724505,
+     "stall": 0.8525923751288572
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7228029130149595
+   }
+  },
+  "W15_fix10s_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 55899,
+    "shares": {
+     "writer": 0.011504017932962853,
+     "block": 0.021991416875821596,
+     "day": 1.5059678676527555e-08,
+     "unit": 0.0005724843080810538,
+     "stall": 0.9659320658234558
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9439406489476342
+   },
+   "CS1 2021": {
+    "n_lengths": 13940,
+    "shares": {
+     "writer": 0.012836178150250628,
+     "block": 0.030681418551667436,
+     "day": 7.578550717431158e-10,
+     "unit": 1.6070725451651402e-10,
+     "stall": 0.9564824023795196
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9258009838278523
+   },
+   "CoAuthor": {
+    "n_lengths": 3006,
+    "shares": {
+     "writer": 0.11744585228084145,
+     "unit": 0.026174874619110007,
+     "stall": 0.8563792731000486
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7389334208192071
+   }
+  },
+  "W15_fix10s_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 54495,
+    "shares": {
+     "writer": 0.00686909484500124,
+     "block": 0.012663198394685767,
+     "day": 2.0169777717816536e-09,
+     "unit": 0.001110931166994539,
+     "stall": 0.9793567735763407
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9666935751816549
+   },
+   "CS1 2021": {
+    "n_lengths": 13375,
+    "shares": {
+     "writer": 0.006954333469766717,
+     "block": 0.01966378693539642,
+     "day": 3.44622643305076e-10,
+     "unit": 9.13997883753463e-10,
+     "stall": 0.9733818783362164
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.95371809140082
+   },
+   "CoAuthor": {
+    "n_lengths": 2903,
+    "shares": {
+     "writer": 0.10849315361307285,
+     "unit": 0.01878508549425331,
+     "stall": 0.8727217608926738
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.764228607279601
+   }
+  },
+  "W15_fix10s_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 57711,
+    "shares": {
+     "writer": 0.012406146129146678,
+     "block": 0.023128936665924096,
+     "day": 3.997428439024447e-09,
+     "unit": 5.947715702783391e-05,
+     "stall": 0.964405436050473
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9412764993845489
+   },
+   "CS1 2021": {
+    "n_lengths": 14536,
+    "shares": {
+     "writer": 0.013351192430600732,
+     "block": 0.030400807027279576,
+     "day": 2.400308598566712e-09,
+     "unit": 3.660052843268699e-10,
+     "stall": 0.9562479977758058
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9258471907485263
+   },
+   "CoAuthor": {
+    "n_lengths": 2905,
+    "shares": {
+     "writer": 0.11320269460149321,
+     "unit": 0.020998046755964568,
+     "stall": 0.8657992586425421
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7525965640410489
+   }
+  },
+  "W15_fix30s_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 36750,
+    "shares": {
+     "writer": 0.01240508295213171,
+     "block": 0.02043852575601716,
+     "day": 0.0027009387407494756,
+     "unit": 0.0022844950578367385,
+     "stall": 0.9621709574932649
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9417324317372477
+   },
+   "CS1 2021": {
+    "n_lengths": 9769,
+    "shares": {
+     "writer": 0.01751637594028339,
+     "block": 0.027727252989823342,
+     "day": 0.004467077512306536,
+     "unit": 1.1992533627801583e-10,
+     "stall": 0.9502892934376614
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9225620404478381
+   },
+   "CoAuthor": {
+    "n_lengths": 709,
+    "shares": {
+     "writer": 0.07301658755891204,
+     "unit": 0.1069113302703232,
+     "stall": 0.8200720821707648
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.7131607519004416
+   }
+  },
+  "W15_fix30s_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 34999,
+    "shares": {
+     "writer": 0.006485780164217473,
+     "block": 0.01008092758224111,
+     "day": 0.0009474070443338298,
+     "unit": 0.0029091905605326492,
+     "stall": 0.9795766946486749
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9694957670664338
+   },
+   "CS1 2021": {
+    "n_lengths": 9099,
+    "shares": {
+     "writer": 0.009172010077456378,
+     "block": 0.014171083193217141,
+     "day": 1.5061879502417845e-08,
+     "unit": 1.931672790248036e-10,
+     "stall": 0.9766568914742797
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9624858082810626
+   },
+   "CoAuthor": {
+    "n_lengths": 698,
+    "shares": {
+     "writer": 0.0696264518407211,
+     "unit": 0.10289178999575807,
+     "stall": 0.8274817581635209
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7245899681677628
+   }
+  },
+  "W15_fix30s_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 38294,
+    "shares": {
+     "writer": 0.012595999498261514,
+     "block": 0.021728480106556952,
+     "day": 0.0019996322688364686,
+     "unit": 0.0025506314345859348,
+     "stall": 0.9611252566917592
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9393967765852023
+   },
+   "CS1 2021": {
+    "n_lengths": 10300,
+    "shares": {
+     "writer": 0.01860810739593572,
+     "block": 0.027760049533340776,
+     "day": 0.00439272873764137,
+     "unit": 8.043255388491189e-10,
+     "stall": 0.9492391135287566
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9214790639954158
+   },
+   "CoAuthor": {
+    "n_lengths": 700,
+    "shares": {
+     "writer": 0.07527707942117279,
+     "unit": 0.10510582404812263,
+     "stall": 0.8196170965307046
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.714511272482582
+   }
+  },
+  "W15_fix30s_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 32931,
+    "shares": {
+     "writer": 0.01148039021209187,
+     "block": 0.019474164422449095,
+     "day": 0.004591347913397912,
+     "unit": 5.394410093918316e-10,
+     "stall": 0.9644540969126201
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.944979932490171
+   },
+   "CS1 2021": {
+    "n_lengths": 9006,
+    "shares": {
+     "writer": 0.01561600969984159,
+     "block": 0.023853253334533534,
+     "day": 0.009702678061178832,
+     "unit": 9.908235165238068e-10,
+     "stall": 0.9508280579136225
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9269748045790889
+   },
+   "CoAuthor": {
+    "n_lengths": 633,
+    "shares": {
+     "writer": 0.03762233752646458,
+     "unit": 0.0727043082912429,
+     "stall": 0.8896733541822924
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8169690458910496
+   }
+  },
+  "W15_fix30s_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 30985,
+    "shares": {
+     "writer": 0.00508974741326199,
+     "block": 0.009102783304510462,
+     "day": 0.0017476152663498407,
+     "unit": 0.0011166520133079737,
+     "stall": 0.9829432020025697
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9738404186980593
+   },
+   "CS1 2021": {
+    "n_lengths": 8267,
+    "shares": {
+     "writer": 0.007476274637775987,
+     "block": 0.014274139381518993,
+     "day": 4.4324441512211123e-10,
+     "unit": 6.139944574659389e-10,
+     "stall": 0.9782495849234661
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9639754455419471
+   },
+   "CoAuthor": {
+    "n_lengths": 618,
+    "shares": {
+     "writer": 0.028818991856673734,
+     "unit": 0.07046120839399657,
+     "stall": 0.9007197997493297
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8302585913553331
+   }
+  },
+  "W15_fix30s_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 34276,
+    "shares": {
+     "writer": 0.01178828884511602,
+     "block": 0.022025850812943237,
+     "day": 0.0033573682231631116,
+     "unit": 2.1267457200251764e-09,
+     "stall": 0.9628284899920319
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9408026391790886
+   },
+   "CS1 2021": {
+    "n_lengths": 9466,
+    "shares": {
+     "writer": 0.016999893444790224,
+     "block": 0.02539122626759295,
+     "day": 0.007564961633955418,
+     "unit": 1.0096054335487353e-10,
+     "stall": 0.9500439185527009
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9246526922851079
+   },
+   "CoAuthor": {
+    "n_lengths": 620,
+    "shares": {
+     "writer": 0.03180830939258409,
+     "unit": 0.07495265212395777,
+     "stall": 0.8932390384834581
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8182863863595004
+   }
+  },
+  "W30_q0.95_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 63434,
+    "shares": {
+     "writer": 0.015107054280453726,
+     "block": 0.030261085471698753,
+     "day": 1.5725911525582579e-09,
+     "unit": 4.267404734074127e-10,
+     "stall": 0.9546318582485159
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9243707727768172
+   },
+   "CS1 2021": {
+    "n_lengths": 13836,
+    "shares": {
+     "writer": 0.017607106414717445,
+     "block": 0.033315530887098294,
+     "day": 3.265802500159601e-09,
+     "unit": 3.556711331769211e-10,
+     "stall": 0.9490773590767106
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9157618281896124
+   },
+   "CoAuthor": {
+    "n_lengths": 2423,
+    "shares": {
+     "writer": 0.15574801642245867,
+     "unit": 0.013332008589266049,
+     "stall": 0.8309199749882753
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.6751719585658167
+   }
+  },
+  "W30_q0.95_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 62195,
+    "shares": {
+     "writer": 0.011528586699587522,
+     "block": 0.02297631183287899,
+     "day": 1.1299941441274571e-09,
+     "unit": 8.147824741293117e-10,
+     "stall": 0.9654950995227568
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9425187876898778
+   },
+   "CS1 2021": {
+    "n_lengths": 13392,
+    "shares": {
+     "writer": 0.013359356099993842,
+     "block": 0.02070911229735781,
+     "day": 0.003426815581967394,
+     "unit": 0.001982705069545613,
+     "stall": 0.9605220109511354
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9398128986537776
+   },
+   "CoAuthor": {
+    "n_lengths": 2467,
+    "shares": {
+     "writer": 0.1551481137252619,
+     "unit": 0.016948762287235256,
+     "stall": 0.8279031239875029
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.6727550102622409
+   }
+  },
+  "W30_q0.95_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 65344,
+    "shares": {
+     "writer": 0.016407976746253623,
+     "block": 0.032722385061220466,
+     "day": 7.689273685403135e-10,
+     "unit": 3.544442746464322e-10,
+     "stall": 0.9508696370691543
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9181472520079338
+   },
+   "CS1 2021": {
+    "n_lengths": 14365,
+    "shares": {
+     "writer": 0.019355455681586788,
+     "block": 0.033625705893182686,
+     "day": 0.0006048800832280136,
+     "unit": 2.1004208714586354e-09,
+     "stall": 0.9464139562415816
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9127882503483989
+   },
+   "CoAuthor": {
+    "n_lengths": 2469,
+    "shares": {
+     "writer": 0.15906512614521434,
+     "unit": 0.01778782320552561,
+     "stall": 0.8231470506492601
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.6640819245040457
+   }
+  },
+  "W30_q0.95_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 41700,
+    "shares": {
+     "writer": 0.013906075126823998,
+     "block": 0.016760935136487708,
+     "day": 0.004296263769526017,
+     "unit": 0.0005770952501238895,
+     "stall": 0.9644596307170383
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9476986955805506
+   },
+   "CS1 2021": {
+    "n_lengths": 10130,
+    "shares": {
+     "writer": 0.017167765016928734,
+     "block": 0.029458401918831006,
+     "day": 1.7430738469445845e-09,
+     "unit": 1.3635813843754448e-10,
+     "stall": 0.9533738311848083
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9239154292659774
+   },
+   "CoAuthor": {
+    "n_lengths": 1460,
+    "shares": {
+     "writer": 0.11479892829530601,
+     "unit": 0.01626907588932324,
+     "stall": 0.8689319958153708
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7541330675200648
+   }
+  },
+  "W30_q0.95_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 40152,
+    "shares": {
+     "writer": 0.007495166692099621,
+     "block": 0.007886368415550992,
+     "day": 2.99896957309124e-10,
+     "unit": 0.0022091089437458328,
+     "stall": 0.9824093556487066
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9745229872331556
+   },
+   "CS1 2021": {
+    "n_lengths": 9566,
+    "shares": {
+     "writer": 0.009854490627615885,
+     "block": 0.015756820707876686,
+     "day": 9.972414095216275e-09,
+     "unit": 1.593523827920217e-09,
+     "stall": 0.9743886770985695
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9586318563906928
+   },
+   "CoAuthor": {
+    "n_lengths": 1475,
+    "shares": {
+     "writer": 0.10228982754210421,
+     "unit": 0.03958240514609566,
+     "stall": 0.8581277673118002
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7558379397696959
+   }
+  },
+  "W30_q0.95_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 43109,
+    "shares": {
+     "writer": 0.014966483356175873,
+     "block": 0.02056440022898109,
+     "day": 0.0022119350735871064,
+     "unit": 0.0011701672152269536,
+     "stall": 0.9610870141260289
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9405226138970478
+   },
+   "CS1 2021": {
+    "n_lengths": 10549,
+    "shares": {
+     "writer": 0.017620462113744566,
+     "block": 0.02572255713904565,
+     "day": 3.448597134186188e-10,
+     "unit": 1.96994416516987e-09,
+     "stall": 0.9566569784324059
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9309344212933602
+   },
+   "CoAuthor": {
+    "n_lengths": 1477,
+    "shares": {
+     "writer": 0.10941994342150299,
+     "unit": 0.04482121763460043,
+     "stall": 0.8457588389438966
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7363388955223936
+   }
+  },
+  "W30_q0.99_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 32478,
+    "shares": {
+     "writer": 0.032190577687028925,
+     "block": 0.034999356403174295,
+     "day": 0.00826241578101735,
+     "unit": 5.914371067046178e-10,
+     "stall": 0.9245476495373423
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8895482931341679
+   },
+   "CS1 2021": {
+    "n_lengths": 5834,
+    "shares": {
+     "writer": 0.02891489664326377,
+     "block": 0.02592175892628331,
+     "day": 0.026066190141571265,
+     "unit": 0.0028131425224686567,
+     "stall": 0.916284011766413
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8873691151231493
+   },
+   "CoAuthor": {
+    "n_lengths": 1461,
+    "shares": {
+     "writer": 0.13594015529557243,
+     "unit": 0.0377869930701482,
+     "stall": 0.8262728516342794
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.690332696338707
+   }
+  },
+  "W30_q0.99_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 31683,
+    "shares": {
+     "writer": 0.017626767140592366,
+     "block": 0.024094249061552827,
+     "day": 0.0018862145526597999,
+     "unit": 2.4699464084374736e-08,
+     "stall": 0.956392744545731
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9322984954841782
+   },
+   "CS1 2021": {
+    "n_lengths": 5624,
+    "shares": {
+     "writer": 0.020971108322898054,
+     "block": 0.017918082744606087,
+     "day": 0.008051992758533738,
+     "unit": 1.31869193049192e-09,
+     "stall": 0.9530588148552702
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9320877065323722
+   },
+   "CoAuthor": {
+    "n_lengths": 1466,
+    "shares": {
+     "writer": 0.1365326964166575,
+     "unit": 0.02313770926797984,
+     "stall": 0.8403295943153627
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.7037968978987053
+   }
+  },
+  "W30_q0.99_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 33288,
+    "shares": {
+     "writer": 0.034465281843594625,
+     "block": 0.033147100790964903,
+     "day": 0.01019767559099779,
+     "unit": 5.321185964343095e-09,
+     "stall": 0.9221899364532566
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.887724654609662
+   },
+   "CS1 2021": {
+    "n_lengths": 5954,
+    "shares": {
+     "writer": 0.040593758721861245,
+     "block": 0.031149977278141228,
+     "day": 0.02242940724394531,
+     "unit": 0.0030098823005090874,
+     "stall": 0.9028169744555431
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8622232157336819
+   },
+   "CoAuthor": {
+    "n_lengths": 1468,
+    "shares": {
+     "writer": 0.14176395560178506,
+     "unit": 0.025237142793901046,
+     "stall": 0.8329989016043139
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.6912349460025289
+   }
+  },
+  "W30_q0.99_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 24833,
+    "shares": {
+     "writer": 0.028497308063267324,
+     "block": 0.022943975785218618,
+     "day": 0.008592947040958587,
+     "unit": 0.0007868216036387384,
+     "stall": 0.9391789475069168
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9106816394436494
+   },
+   "CS1 2021": {
+    "n_lengths": 4968,
+    "shares": {
+     "writer": 0.028065521434125905,
+     "block": 0.008376607423389588,
+     "day": 0.026598081865353868,
+     "unit": 0.0032510600710209253,
+     "stall": 0.9337087292061098
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9056432077719839
+   },
+   "CoAuthor": {
+    "n_lengths": 986,
+    "shares": {
+     "writer": 0.09214583310861929,
+     "unit": 0.028123043963986887,
+     "stall": 0.8797311229273937
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.7875852898187745
+   }
+  },
+  "W30_q0.99_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 23521,
+    "shares": {
+     "writer": 0.014230634702500043,
+     "block": 0.008324239814260155,
+     "day": 4.0813870386922267e-10,
+     "unit": 0.0001464845150818558,
+     "stall": 0.9772986405600191
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9630680058575191
+   },
+   "CS1 2021": {
+    "n_lengths": 4568,
+    "shares": {
+     "writer": 0.012991154098894985,
+     "block": 3.5433990386599792e-09,
+     "day": 0.011818775173961685,
+     "unit": 3.3344611145009183e-10,
+     "stall": 0.9751900668502982
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9621989127514032
+   },
+   "CoAuthor": {
+    "n_lengths": 991,
+    "shares": {
+     "writer": 0.08247569708181572,
+     "unit": 0.0024312575106128524,
+     "stall": 0.9150930454075714
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.8326173483257557
+   }
+  },
+  "W30_q0.99_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 25467,
+    "shares": {
+     "writer": 0.027211998068251482,
+     "block": 0.02421400799762923,
+     "day": 0.0068183434259568515,
+     "unit": 0.004385840294106876,
+     "stall": 0.9373698102140556
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9101578121458042
+   },
+   "CS1 2021": {
+    "n_lengths": 5062,
+    "shares": {
+     "writer": 0.04035669317149231,
+     "block": 0.006276015839207257,
+     "day": 0.026464501102099015,
+     "unit": 0.0037950079175521055,
+     "stall": 0.9231077819696494
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8827510887981571
+   },
+   "CoAuthor": {
+    "n_lengths": 993,
+    "shares": {
+     "writer": 0.09013070820544017,
+     "unit": 0.010851880611257763,
+     "stall": 0.899017411183302
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.8088867029778619
+   }
+  },
+  "W30_q0.995_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 20081,
+    "shares": {
+     "writer": 0.04024793941232099,
+     "block": 0.04745601534405729,
+     "day": 0.004570179980104504,
+     "unit": 0.006273056995592647,
+     "stall": 0.9014528082679245
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8539967929238672
+   },
+   "CS1 2021": {
+    "n_lengths": 3404,
+    "shares": {
+     "writer": 0.036453398764150574,
+     "block": 0.019099033934571533,
+     "day": 0.028621743986783625,
+     "unit": 0.013867755430875438,
+     "stall": 0.9019580678836189
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8655046691194683
+   },
+   "CoAuthor": {
+    "n_lengths": 929,
+    "shares": {
+     "writer": 0.16075262361572543,
+     "unit": 0.01800336784240914,
+     "stall": 0.8212440085418654
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.66049138492614
+   }
+  },
+  "W30_q0.995_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 19543,
+    "shares": {
+     "writer": 0.023367933528504175,
+     "block": 0.0191740376810342,
+     "day": 6.2385778169389e-05,
+     "unit": 0.0021948438413731766,
+     "stall": 0.9552007991709192
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.931832865642415
+   },
+   "CS1 2021": {
+    "n_lengths": 3359,
+    "shares": {
+     "writer": 0.0032106624826253823,
+     "block": 0.017444918720419825,
+     "day": 7.959302204606827e-10,
+     "unit": 8.053360645966531e-10,
+     "stall": 0.9793444171956884
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9618994984752686
+   },
+   "CoAuthor": {
+    "n_lengths": 930,
+    "shares": {
+     "writer": 0.17279074316573617,
+     "unit": 0.010147055835719879,
+     "stall": 0.817062200998544
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.6442714578328078
+   }
+  },
+  "W30_q0.995_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 20479,
+    "shares": {
+     "writer": 0.04371385891800965,
+     "block": 0.04816614320703449,
+     "day": 0.002364003369225753,
+     "unit": 0.008393036337630336,
+     "stall": 0.8973629581680997
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8491968149610652
+   },
+   "CS1 2021": {
+    "n_lengths": 3474,
+    "shares": {
+     "writer": 0.03671917354229087,
+     "block": 0.018773182378400373,
+     "day": 0.032478648818316386,
+     "unit": 0.01284440795309219,
+     "stall": 0.8991845873079002
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8624654137656094
+   },
+   "CoAuthor": {
+    "n_lengths": 932,
+    "shares": {
+     "writer": 0.1826534911813651,
+     "unit": 0.013017489908904365,
+     "stall": 0.8043290189097306
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.6216755277283655
+   }
+  },
+  "W30_q0.995_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 16453,
+    "shares": {
+     "writer": 0.03254294817493305,
+     "block": 0.02787340256055467,
+     "day": 0.011874555624785853,
+     "unit": 0.0026513524953025312,
+     "stall": 0.925057741144424
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8925147929694909
+   },
+   "CS1 2021": {
+    "n_lengths": 3030,
+    "shares": {
+     "writer": 0.03295137792373473,
+     "block": 0.036593087651733996,
+     "day": 1.485076625689654e-10,
+     "unit": 0.01931153123382949,
+     "stall": 0.9111440030421941
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8745509153904601
+   },
+   "CoAuthor": {
+    "n_lengths": 629,
+    "shares": {
+     "writer": 0.07177318818721207,
+     "unit": 0.031937491952276534,
+     "stall": 0.8962893198605114
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8245161316732994
+   }
+  },
+  "W30_q0.995_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 15446,
+    "shares": {
+     "writer": 0.01400907480778547,
+     "block": 0.0019099424263077788,
+     "day": 0.003142084557825355,
+     "unit": 1.9558607974279838e-09,
+     "stall": 0.9809388962522206
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9669298214444352
+   },
+   "CS1 2021": {
+    "n_lengths": 2828,
+    "shares": {
+     "writer": 3.745327105141971e-10,
+     "block": 0.007306396414396967,
+     "day": 0.00012408805639316887,
+     "unit": 3.3160079922715246e-10,
+     "stall": 0.9925695148230764
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9852631184086794
+   },
+   "CoAuthor": {
+    "n_lengths": 625,
+    "shares": {
+     "writer": 0.0911245248924618,
+     "unit": 2.0668550235210237e-10,
+     "stall": 0.9088754749008527
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.8177509500083909
+   }
+  },
+  "W30_q0.995_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 16822,
+    "shares": {
+     "writer": 0.037440161921760584,
+     "block": 0.025721801590555617,
+     "day": 0.010138982357932931,
+     "unit": 0.0025337505456215137,
+     "stall": 0.9241653035841294
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8867251416623688
+   },
+   "CS1 2021": {
+    "n_lengths": 3100,
+    "shares": {
+     "writer": 0.036903518172888644,
+     "block": 0.017919257678040937,
+     "day": 0.02248728271329807,
+     "unit": 0.013089750784460282,
+     "stall": 0.9096001906513121
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8726966724784235
+   },
+   "CoAuthor": {
+    "n_lengths": 627,
+    "shares": {
+     "writer": 0.12511562235068363,
+     "unit": 0.004403587807180944,
+     "stall": 0.8704807898421354
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.7453651674914518
+   }
+  },
+  "W30_fix10s_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 50958,
+    "shares": {
+     "writer": 0.01449081025687566,
+     "block": 0.028170373020609398,
+     "day": 4.121223755186059e-08,
+     "unit": 8.582018772352962e-10,
+     "stall": 0.9573387746520755
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9291684016314661
+   },
+   "CS1 2021": {
+    "n_lengths": 12900,
+    "shares": {
+     "writer": 0.015707778817837956,
+     "block": 0.03219009668087992,
+     "day": 1.4464484059605687e-10,
+     "unit": 9.522073541695242e-11,
+     "stall": 0.9521021242614166
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9199120275805367
+   },
+   "CoAuthor": {
+    "n_lengths": 1271,
+    "shares": {
+     "writer": 0.16806130318955023,
+     "unit": 0.07780902610755452,
+     "stall": 0.7541296707028953
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.586068367513345
+   }
+  },
+  "W30_fix10s_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 49499,
+    "shares": {
+     "writer": 0.008984210031927224,
+     "block": 0.018136958430203104,
+     "day": 1.4889385922404712e-08,
+     "unit": 1.9154902404240324e-09,
+     "stall": 0.9728788147329935
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9547418563027904
+   },
+   "CS1 2021": {
+    "n_lengths": 12301,
+    "shares": {
+     "writer": 0.010112476541606305,
+     "block": 0.024361916928052705,
+     "day": 1.0139455075662251e-10,
+     "unit": 1.6214570838158838e-10,
+     "stall": 0.9655256062668007
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.941163689338748
+   },
+   "CoAuthor": {
+    "n_lengths": 1269,
+    "shares": {
+     "writer": 0.1678019676542845,
+     "unit": 0.07864986067185423,
+     "stall": 0.7535481716738612
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.5857462040195767
+   }
+  },
+  "W30_fix10s_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 52974,
+    "shares": {
+     "writer": 0.014555012722900627,
+     "block": 0.030372822808281543,
+     "day": 2.0540025328313908e-10,
+     "unit": 1.3717438169416495e-10,
+     "stall": 0.9550721641262432
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9246993413179616
+   },
+   "CS1 2021": {
+    "n_lengths": 13589,
+    "shares": {
+     "writer": 0.017083797545705305,
+     "block": 0.033540982428682656,
+     "day": 1.0460349901657487e-10,
+     "unit": 9.592456867924831e-11,
+     "stall": 0.949375219825084
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9158342373964014
+   },
+   "CoAuthor": {
+    "n_lengths": 1271,
+    "shares": {
+     "writer": 0.17535858958735298,
+     "unit": 0.07903435056438907,
+     "stall": 0.7456070598482579
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.570248470260905
+   }
+  },
+  "W30_fix10s_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 36898,
+    "shares": {
+     "writer": 0.01368701915465154,
+     "block": 0.018227069750064852,
+     "day": 0.0035506679591480106,
+     "unit": 1.624777278282204e-10,
+     "stall": 0.9645352429736579
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9463081732235931
+   },
+   "CS1 2021": {
+    "n_lengths": 9909,
+    "shares": {
+     "writer": 0.018008334493569082,
+     "block": 0.028068770428985576,
+     "day": 0.0015447349122567197,
+     "unit": 2.416767153117384e-10,
+     "stall": 0.9523781599235118
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9243093894945262
+   },
+   "CoAuthor": {
+    "n_lengths": 890,
+    "shares": {
+     "writer": 0.058739621832895564,
+     "unit": 0.07289608243419445,
+     "stall": 0.86836429573291
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7954682132987155
+   }
+  },
+  "W30_fix10s_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 35057,
+    "shares": {
+     "writer": 0.007404092451600037,
+     "block": 0.004956186013081755,
+     "day": 0.0035355430523188154,
+     "unit": 2.2612615022760687e-09,
+     "stall": 0.984104176221738
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.976700083770138
+   },
+   "CS1 2021": {
+    "n_lengths": 9206,
+    "shares": {
+     "writer": 0.009028779654380417,
+     "block": 0.017240066903942683,
+     "day": 1.4219916744278217e-07,
+     "unit": 1.3726150042945927e-08,
+     "stall": 0.9737309975163595
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9564909306124169
+   },
+   "CoAuthor": {
+    "n_lengths": 859,
+    "shares": {
+     "writer": 0.05186943739785979,
+     "unit": 0.036970721092375335,
+     "stall": 0.9111598415097649
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.8592904041119052
+   }
+  },
+  "W30_fix10s_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 38337,
+    "shares": {
+     "writer": 0.013970527637715982,
+     "block": 0.019543084602141304,
+     "day": 0.0037400023577568507,
+     "unit": 6.843381107844196e-10,
+     "stall": 0.9627463847180477
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9432033001159065
+   },
+   "CS1 2021": {
+    "n_lengths": 10401,
+    "shares": {
+     "writer": 0.019300881707204214,
+     "block": 0.03010491647284133,
+     "day": 6.278388295154269e-08,
+     "unit": 1.0226237118796054e-10,
+     "stall": 0.9505941389338091
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9204892224609678
+   },
+   "CoAuthor": {
+    "n_lengths": 861,
+    "shares": {
+     "writer": 0.06126313856218785,
+     "unit": 0.043259536857763715,
+     "stall": 0.8954773245800484
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.8342141860178605
+   }
+  },
+  "W30_fix30s_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 31878,
+    "shares": {
+     "writer": 0.013542546148132602,
+     "block": 0.03298944843841934,
+     "day": 3.086780068167874e-10,
+     "unit": 8.817615003520955e-10,
+     "stall": 0.9534680042230086
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9204785557845893
+   },
+   "CS1 2021": {
+    "n_lengths": 8703,
+    "shares": {
+     "writer": 0.01652476652810176,
+     "block": 0.03277512614753476,
+     "day": 1.7872760733291382e-09,
+     "unit": 9.240556497980661e-09,
+     "stall": 0.9507000962965308
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9179249701489961
+   },
+   "CoAuthor": {
+    "n_lengths": 359,
+    "shares": {
+     "writer": 0.15513440210297175,
+     "unit": 0.15805759803864017,
+     "stall": 0.686807999858388
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.5287504018197479
+   }
+  },
+  "W30_fix30s_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 30017,
+    "shares": {
+     "writer": 0.009679657722627582,
+     "block": 0.01565426367262034,
+     "day": 2.554342614035233e-09,
+     "unit": 1.8941317374156567e-10,
+     "stall": 0.9746660758609963
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.959011812188376
+   },
+   "CS1 2021": {
+    "n_lengths": 7968,
+    "shares": {
+     "writer": 0.009248774880098428,
+     "block": 0.02595280695335493,
+     "day": 1.051791797491472e-10,
+     "unit": 1.0914486146764933e-10,
+     "stall": 0.9647984179522227
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9388456109988678
+   },
+   "CoAuthor": {
+    "n_lengths": 366,
+    "shares": {
+     "writer": 0.19063859564539432,
+     "unit": 0.10331349835312435,
+     "stall": 0.7060479060014814
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.5154093103560871
+   }
+  },
+  "W30_fix30s_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 33509,
+    "shares": {
+     "writer": 0.013963041422995454,
+     "block": 0.03293693274208127,
+     "day": 1.3207609568656247e-09,
+     "unit": 1.1979058823548981e-09,
+     "stall": 0.9531000233162564
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9201630905741751
+   },
+   "CS1 2021": {
+    "n_lengths": 9250,
+    "shares": {
+     "writer": 0.018122567314000804,
+     "block": 0.033444761908105226,
+     "day": 2.8327550213183416e-09,
+     "unit": 5.114831838930886e-10,
+     "stall": 0.9484326674336557
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9149879055255505
+   },
+   "CoAuthor": {
+    "n_lengths": 368,
+    "shares": {
+     "writer": 0.2003667906691637,
+     "unit": 0.11653264567521587,
+     "stall": 0.6831005636556204
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.4827337729864567
+   }
+  },
+  "W30_fix30s_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 24634,
+    "shares": {
+     "writer": 0.01000910228943566,
+     "block": 0.02686953950076458,
+     "day": 4.839371210368716e-10,
+     "unit": 6.479399604282928e-08,
+     "stall": 0.9631212929318667
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9362517534311021
+   },
+   "CS1 2021": {
+    "n_lengths": 7048,
+    "shares": {
+     "writer": 0.016457702683883,
+     "block": 0.01777331196743809,
+     "day": 0.00417030255733418,
+     "unit": 2.970592155732987e-10,
+     "stall": 0.9615986824942855
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9438253705268473
+   },
+   "CoAuthor": {
+    "n_lengths": 254,
+    "shares": {
+     "writer": 0.06885174277544014,
+     "unit": 0.15977481221802844,
+     "stall": 0.7713734450065315
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.611598632788503
+   }
+  },
+  "W30_fix30s_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 22445,
+    "shares": {
+     "writer": 0.004954689064623484,
+     "block": 0.0037171459800657927,
+     "day": 9.918038513107798e-11,
+     "unit": 9.667567514718546e-05,
+     "stall": 0.9912314891809831
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9862768001163597
+   },
+   "CS1 2021": {
+    "n_lengths": 6216,
+    "shares": {
+     "writer": 0.009264864228446038,
+     "block": 0.010211991589652282,
+     "day": 1.0664432648432827e-08,
+     "unit": 1.9681606595024976e-09,
+     "stall": 0.9805231315493084
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9703111399596561
+   },
+   "CoAuthor": {
+    "n_lengths": 253,
+    "shares": {
+     "writer": 0.024630649469049665,
+     "unit": 0.061363706488091654,
+     "stall": 0.9140056440428588
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.8526419375547671
+   }
+  },
+  "W30_fix30s_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 25761,
+    "shares": {
+     "writer": 0.010685610839602459,
+     "block": 0.025430988715304,
+     "day": 1.902521077967324e-09,
+     "unit": 1.8460955314040169e-09,
+     "stall": 0.963883396696477
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.938452407981173
+   },
+   "CS1 2021": {
+    "n_lengths": 7428,
+    "shares": {
+     "writer": 0.019537357813741305,
+     "block": 0.015216792574632494,
+     "day": 0.006427038439482837,
+     "unit": 5.356235420072361e-10,
+     "stall": 0.9588188106365197
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9392814528227784
+   },
+   "CoAuthor": {
+    "n_lengths": 255,
+    "shares": {
+     "writer": 0.04349967510551946,
+     "unit": 0.1109144778893203,
+     "stall": 0.8455858470051602
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7346713691158399
+   }
+  },
+  "W60_q0.95_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 40343,
+    "shares": {
+     "writer": 0.016926481806580237,
+     "block": 0.03383404991391431,
+     "day": 1.7244326094133138e-10,
+     "unit": 9.701123105549006e-11,
+     "stall": 0.9492394680100509
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9154054180961366
+   },
+   "CS1 2021": {
+    "n_lengths": 9671,
+    "shares": {
+     "writer": 0.016500906031002023,
+     "block": 0.03242507981199526,
+     "day": 0.004056025918369111,
+     "unit": 7.603301091468813e-10,
+     "stall": 0.9470179874783035
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9145929076663082
+   },
+   "CoAuthor": {
+    "n_lengths": 394,
+    "shares": {
+     "writer": 0.12514200700700295,
+     "unit": 0.10284747096263874,
+     "stall": 0.7720105220303584
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.6468685150233554
+   }
+  },
+  "W60_q0.95_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 38561,
+    "shares": {
+     "writer": 0.013559170600067984,
+     "block": 0.022732677752303056,
+     "day": 0.0008482857506088989,
+     "unit": 6.634503530144167e-10,
+     "stall": 0.9628598652335697
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9401271874812667
+   },
+   "CS1 2021": {
+    "n_lengths": 9030,
+    "shares": {
+     "writer": 0.010836612320423282,
+     "block": 0.022874143201419575,
+     "day": 0.010058475459531355,
+     "unit": 2.166535717923756e-09,
+     "stall": 0.9562307668520901
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9333566236506705
+   },
+   "CoAuthor": {
+    "n_lengths": 417,
+    "shares": {
+     "writer": 0.13055262540718296,
+     "unit": 0.08758526814339143,
+     "stall": 0.7818621064494257
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.6513094810422427
+   }
+  },
+  "W60_q0.95_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 42236,
+    "shares": {
+     "writer": 0.01759530716714933,
+     "block": 0.037658088805587055,
+     "day": 0.00011913461085861474,
+     "unit": 1.5959335049433973e-10,
+     "stall": 0.9446274692568116
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9069693804512245
+   },
+   "CS1 2021": {
+    "n_lengths": 10212,
+    "shares": {
+     "writer": 0.017947953300802802,
+     "block": 0.031017582764802105,
+     "day": 0.007926584639004173,
+     "unit": 1.5855438725542224e-09,
+     "stall": 0.943107877709847
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9120902949450449
+   },
+   "CoAuthor": {
+    "n_lengths": 419,
+    "shares": {
+     "writer": 0.1397285803167962,
+     "unit": 0.09240900789168968,
+     "stall": 0.767862411791514
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.6281338314747178
+   }
+  },
+  "W60_q0.95_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 22220,
+    "shares": {
+     "writer": 0.009939000825235805,
+     "block": 0.02676702608111921,
+     "day": 2.847503746906498e-08,
+     "unit": 2.9657871336798418e-09,
+     "stall": 0.9632939416528205
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9365269155717012
+   },
+   "CS1 2021": {
+    "n_lengths": 6091,
+    "shares": {
+     "writer": 0.015260909760679654,
+     "block": 0.02600941508606256,
+     "day": 0.0019450796454643458,
+     "unit": 6.9803584317566106e-09,
+     "stall": 0.956784588527435
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9307751734413724
+   },
+   "CoAuthor": {
+    "n_lengths": 176,
+    "shares": {
+     "writer": 0.1673400264348606,
+     "unit": 6.404725072092236e-10,
+     "stall": 0.832659972924667
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.6653199464898064
+   }
+  },
+  "W60_q0.95_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 20096,
+    "shares": {
+     "writer": 0.004079524898448003,
+     "block": 0.007074224952990029,
+     "day": 1.1446702866778218e-09,
+     "unit": 8.363049621485493e-10,
+     "stall": 0.9888462481675867
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9817720232145967
+   },
+   "CS1 2021": {
+    "n_lengths": 5331,
+    "shares": {
+     "writer": 0.006788237866853105,
+     "block": 0.01629053383939913,
+     "day": 0.002033218358832609,
+     "unit": 2.3364025990602988e-09,
+     "stall": 0.9748880075985126
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9585974737591134
+   },
+   "CoAuthor": {
+    "n_lengths": 182,
+    "shares": {
+     "writer": 0.1486239362513996,
+     "unit": 8.56051890097253e-11,
+     "stall": 0.8513760636629951
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.7027521274115955
+   }
+  },
+  "W60_q0.95_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 23216,
+    "shares": {
+     "writer": 0.010621340684772971,
+     "block": 0.028204842098243022,
+     "day": 9.655570707650685e-11,
+     "unit": 4.886402290273751e-09,
+     "stall": 0.961173812234026
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.932968970135783
+   },
+   "CS1 2021": {
+    "n_lengths": 6409,
+    "shares": {
+     "writer": 0.014383486114867035,
+     "block": 0.018230322269404152,
+     "day": 0.005960706667223136,
+     "unit": 1.540548512785952e-09,
+     "stall": 0.9614254834079571
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.943195161138553
+   },
+   "CoAuthor": {
+    "n_lengths": 184,
+    "shares": {
+     "writer": 0.17855272932196697,
+     "unit": 1.1654854404661155e-09,
+     "stall": 0.8214472695125477
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.6428945401905807
+   }
+  },
+  "W60_q0.99_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 23058,
+    "shares": {
+     "writer": 0.028572866446062682,
+     "block": 0.041539185412599204,
+     "day": 0.0024177108049771136,
+     "unit": 2.8741165401042747e-10,
+     "stall": 0.9274702370489494
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8859310516363502
+   },
+   "CS1 2021": {
+    "n_lengths": 4776,
+    "shares": {
+     "writer": 0.02814097141490383,
+     "block": 0.01582285889185344,
+     "day": 0.020552234267313046,
+     "unit": 0.0024700852017163263,
+     "stall": 0.9330138502242133
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9048728788093096
+   },
+   "CoAuthor": {
+    "n_lengths": 249,
+    "shares": {
+     "writer": 0.25542627106088284,
+     "unit": 0.249455456626288,
+     "stall": 0.49511827231282923
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.2396920012519464
+   }
+  },
+  "W60_q0.99_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 21606,
+    "shares": {
+     "writer": 0.013629842126287574,
+     "block": 0.022090599777113726,
+     "day": 0.0020906081824523678,
+     "unit": 0.002191962536165771,
+     "stall": 0.9599969873779806
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9379063876008669
+   },
+   "CS1 2021": {
+    "n_lengths": 4384,
+    "shares": {
+     "writer": 0.014947620304669791,
+     "block": 0.005218702679786475,
+     "day": 0.004748695251385386,
+     "unit": 5.859206038080375e-10,
+     "stall": 0.9750849811782378
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.960137360873568
+   },
+   "CoAuthor": {
+    "n_lengths": 261,
+    "shares": {
+     "writer": 0.2506213002086974,
+     "unit": 0.2291459893220671,
+     "stall": 0.5202327104692356
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.2696114102605382
+   }
+  },
+  "W60_q0.99_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 23975,
+    "shares": {
+     "writer": 0.028638852572057737,
+     "block": 0.03667457290757445,
+     "day": 0.0024835302508796476,
+     "unit": 0.0047542972091422315,
+     "stall": 0.927448747060346
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8907741741527715
+   },
+   "CS1 2021": {
+    "n_lengths": 4970,
+    "shares": {
+     "writer": 0.03176160461348482,
+     "block": 0.016675334356048073,
+     "day": 0.02805124081507193,
+     "unit": 7.035353299120071e-10,
+     "stall": 0.9235118195118599
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8917502148983751
+   },
+   "CoAuthor": {
+    "n_lengths": 263,
+    "shares": {
+     "writer": 0.25515457687365195,
+     "unit": 0.23976539958384893,
+     "stall": 0.5050800235424993
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.2499254466688473
+   }
+  },
+  "W60_q0.99_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 15452,
+    "shares": {
+     "writer": 0.0226446285709023,
+     "block": 0.024084009061625836,
+     "day": 5.654259034831013e-10,
+     "unit": 6.854697601436711e-10,
+     "stall": 0.9532713611165762
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9291873520549503
+   },
+   "CS1 2021": {
+    "n_lengths": 3586,
+    "shares": {
+     "writer": 0.011065365373322023,
+     "block": 0.009270164724148527,
+     "day": 0.02113685567515982,
+     "unit": 0.0026437177635299743,
+     "stall": 0.9558838964638396
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9347470407886799
+   },
+   "CoAuthor": {
+    "n_lengths": 123,
+    "shares": {
+     "writer": 0.18938666389599,
+     "unit": 0.15925872691205556,
+     "stall": 0.6513546091919545
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.4619679452959645
+   }
+  },
+  "W60_q0.99_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 13379,
+    "shares": {
+     "writer": 0.007864591757220363,
+     "block": 0.009005872507347393,
+     "day": 8.275737195186158e-10,
+     "unit": 0.00030361386606883275,
+     "stall": 0.9828259210417897
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9738200485344423
+   },
+   "CS1 2021": {
+    "n_lengths": 2941,
+    "shares": {
+     "writer": 0.0020800929989340383,
+     "block": 0.0075908045789009355,
+     "day": 5.1826969297475923e-05,
+     "unit": 1.6623079780417245e-10,
+     "stall": 0.9902772752866368
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9826864707077358
+   },
+   "CoAuthor": {
+    "n_lengths": 126,
+    "shares": {
+     "writer": 0.1066107022996293,
+     "unit": 0.02644425027521511,
+     "stall": 0.8669450474251555
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.7603343451255262
+   }
+  },
+  "W60_q0.99_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 15975,
+    "shares": {
+     "writer": 0.025015484537576137,
+     "block": 0.023802527058433574,
+     "day": 0.0015862195823473806,
+     "unit": 0.0006397587226994958,
+     "stall": 0.9489560100989435
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9239405255613673
+   },
+   "CS1 2021": {
+    "n_lengths": 3703,
+    "shares": {
+     "writer": 0.014170624900172525,
+     "block": 0.003947958807488636,
+     "day": 0.023552254798066646,
+     "unit": 1.900253341738561e-09,
+     "stall": 0.9583291595940189
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9347769047959522
+   },
+   "CoAuthor": {
+    "n_lengths": 128,
+    "shares": {
+     "writer": 0.11353578940281157,
+     "unit": 0.15195842887432467,
+     "stall": 0.7345057817228637
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.5825473528485391
+   }
+  },
+  "W60_q0.995_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 15438,
+    "shares": {
+     "writer": 0.04638627240419886,
+     "block": 0.03826876697905636,
+     "day": 0.001959221583565985,
+     "unit": 0.0029769185646310744,
+     "stall": 0.9104088204685478
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8640225480643489
+   },
+   "CS1 2021": {
+    "n_lengths": 2915,
+    "shares": {
+     "writer": 0.028859676484150398,
+     "block": 0.02356261755107237,
+     "day": 0.015323472289138962,
+     "unit": 0.017041356268667374,
+     "stall": 0.9152128774069709
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8863532009228204
+   },
+   "CoAuthor": {
+    "n_lengths": 178,
+    "shares": {
+     "writer": 0.1467698532773924,
+     "unit": 0.26635192238639993,
+     "stall": 0.5868782243362076
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.3205263019498077
+   }
+  },
+  "W60_q0.995_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 14439,
+    "shares": {
+     "writer": 0.02169529182457861,
+     "block": 0.00955513142346821,
+     "day": 3.3667790840712514e-10,
+     "unit": 0.0017883880582563153,
+     "stall": 0.9669611883570189
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9452658965324403
+   },
+   "CS1 2021": {
+    "n_lengths": 2693,
+    "shares": {
+     "writer": 0.006608946269636291,
+     "block": 0.02557257981491192,
+     "day": 4.772124913393625e-09,
+     "unit": 8.972635785352052e-08,
+     "stall": 0.967818379416969
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9422457996020571
+   },
+   "CoAuthor": {
+    "n_lengths": 182,
+    "shares": {
+     "writer": 0.15152293389909116,
+     "unit": 0.22657807245175013,
+     "stall": 0.6218989936491588
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.3953209211974087
+   }
+  },
+  "W60_q0.995_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 15986,
+    "shares": {
+     "writer": 0.04703306646258011,
+     "block": 0.03701514362339204,
+     "day": 0.0021432845994990924,
+     "unit": 0.00385760134967257,
+     "stall": 0.9099509039648562
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8629178375022761
+   },
+   "CS1 2021": {
+    "n_lengths": 3051,
+    "shares": {
+     "writer": 0.04150792791197107,
+     "block": 0.03518415504154848,
+     "day": 0.019930343026088194,
+     "unit": 0.009681179833459987,
+     "stall": 0.8936963941869323
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.8521884662749611
+   },
+   "CoAuthor": {
+    "n_lengths": 184,
+    "shares": {
+     "writer": 0.1584083333072679,
+     "unit": 0.24369548208548344,
+     "stall": 0.5978961846072487
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.3542007025217653
+   }
+  },
+  "W60_q0.995_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 11049,
+    "shares": {
+     "writer": 0.02599298824962793,
+     "block": 0.029989615427847907,
+     "day": 0.005142233402202489,
+     "unit": 1.4340330750987358e-09,
+     "stall": 0.9388751614862885
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9088855460584405
+   },
+   "CS1 2021": {
+    "n_lengths": 2377,
+    "shares": {
+     "writer": 0.019780988776673163,
+     "block": 0.013915476194966659,
+     "day": 0.0044840469216272895,
+     "unit": 0.025508435417832175,
+     "stall": 0.9363110526889007
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9108026172710685
+   },
+   "CoAuthor": {
+    "n_lengths": 87,
+    "shares": {
+     "writer": 2.6738181199660995e-10,
+     "unit": 0.5766003683077717,
+     "stall": 0.42339963142484655
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": -0.15320073688292518
+   }
+  },
+  "W60_q0.995_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 9307,
+    "shares": {
+     "writer": 0.0038156261980412443,
+     "block": 3.6333559999527e-10,
+     "day": 0.0042108219435457355,
+     "unit": 2.4561255124731374e-08,
+     "stall": 0.9919735269338222
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9877627049902765
+   },
+   "CS1 2021": {
+    "n_lengths": 1910,
+    "shares": {
+     "writer": 0.0007445060217728732,
+     "block": 1.389869123207553e-10,
+     "day": 1.936935777321651e-10,
+     "unit": 3.06151550221403e-10,
+     "stall": 0.9992554933393951
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9985109873176222
+   },
+   "CoAuthor": {
+    "n_lengths": 86,
+    "shares": {
+     "writer": 4.915987124488913e-11,
+     "unit": 0.5222437731735349,
+     "stall": 0.4777562267773051
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": -0.04448754639622976
+   }
+  },
+  "W60_q0.995_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 11356,
+    "shares": {
+     "writer": 0.02618921210553875,
+     "block": 0.019168053996106712,
+     "day": 0.01207837964758816,
+     "unit": 2.8883481342992473e-06,
+     "stall": 0.942561465902632
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9163722537970933
+   },
+   "CS1 2021": {
+    "n_lengths": 2464,
+    "shares": {
+     "writer": 0.01762623213114594,
+     "block": 0.010922404474327903,
+     "day": 0.01692919851010597,
+     "unit": 0.020788203635787893,
+     "stall": 0.9337339612486323
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9129457576128444
+   },
+   "CoAuthor": {
+    "n_lengths": 88,
+    "shares": {
+     "writer": 4.27559058326923e-11,
+     "unit": 0.5793261011783314,
+     "stall": 0.42067389877891265
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": -0.15865220239941874
+   }
+  },
+  "W60_fix10s_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 33807,
+    "shares": {
+     "writer": 0.015229660385382607,
+     "block": 0.04215926251724173,
+     "day": 1.5591097765098999e-09,
+     "unit": 1.7460767441796452e-09,
+     "stall": 0.9426110737921891
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9004518112749473
+   },
+   "CS1 2021": {
+    "n_lengths": 9247,
+    "shares": {
+     "writer": 0.017604228319496616,
+     "block": 0.021894769616445757,
+     "day": 0.0007666770962652498,
+     "unit": 7.275076697187439e-10,
+     "stall": 0.9597343242402847
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.937839554623839
+   },
+   "CoAuthor": {
+    "n_lengths": 297,
+    "shares": {
+     "writer": 0.1898488224055605,
+     "unit": 0.22026344378073764,
+     "stall": 0.5898877338137019
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.3696242900329642
+   }
+  },
+  "W60_fix10s_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 31905,
+    "shares": {
+     "writer": 0.009929383940862459,
+     "block": 0.025243387804963973,
+     "day": 2.1889626804292468e-08,
+     "unit": 1.3067815317276605e-09,
+     "stall": 0.9648272050577653
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9395838172528014
+   },
+   "CS1 2021": {
+    "n_lengths": 8474,
+    "shares": {
+     "writer": 0.013240869270019573,
+     "block": 0.0231419022469982,
+     "day": 1.3691033256097368e-10,
+     "unit": 0.000166652680226595,
+     "stall": 0.9634505756658454
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9403086734188472
+   },
+   "CoAuthor": {
+    "n_lengths": 309,
+    "shares": {
+     "writer": 0.19895968152201918,
+     "unit": 0.197646274607875,
+     "stall": 0.6033940438701058
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.4044343623480866
+   }
+  },
+  "W60_fix10s_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 35670,
+    "shares": {
+     "writer": 0.015922861480043404,
+     "block": 0.04186564277692315,
+     "day": 1.2071317018054507e-08,
+     "unit": 1.2020005356277192e-10,
+     "stall": 0.9422114835515163
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9003458407745931
+   },
+   "CS1 2021": {
+    "n_lengths": 9876,
+    "shares": {
+     "writer": 0.018857143299001244,
+     "block": 0.026780168352569654,
+     "day": 0.002068562416963368,
+     "unit": 2.483758702757533e-09,
+     "stall": 0.952294123447707
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9255139550951373
+   },
+   "CoAuthor": {
+    "n_lengths": 311,
+    "shares": {
+     "writer": 0.20515766829603313,
+     "unit": 0.20181921419992307,
+     "stall": 0.5930231175040437
+    },
+    "converged": true,
+    "method": "default",
+    "stall_minus_max_other": 0.3878654492080106
+   }
+  },
+  "W60_fix10s_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 20959,
+    "shares": {
+     "writer": 0.009740040272385378,
+     "block": 0.028155790252893234,
+     "day": 1.47035941145482e-09,
+     "unit": 1.5654243053251507e-10,
+     "stall": 0.9621041678478196
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9339483775949263
+   },
+   "CS1 2021": {
+    "n_lengths": 6143,
+    "shares": {
+     "writer": 0.012938644232602868,
+     "block": 0.013296088440498916,
+     "day": 0.009075000793829134,
+     "unit": 0.002025516414047609,
+     "stall": 0.9626647501190215
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9493686616785226
+   },
+   "CoAuthor": {
+    "n_lengths": 147,
+    "shares": {
+     "writer": 0.1409976931046704,
+     "unit": 0.22019808918798142,
+     "stall": 0.6388042177073482
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.41860612851936674
+   }
+  },
+  "W60_fix10s_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 18618,
+    "shares": {
+     "writer": 0.004687561213651911,
+     "block": 0.009028406830495127,
+     "day": 1.0808855219477554e-09,
+     "unit": 3.5114525916290335e-10,
+     "stall": 0.9862840305238222
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9772556236933271
+   },
+   "CS1 2021": {
+    "n_lengths": 5265,
+    "shares": {
+     "writer": 0.007032102857243534,
+     "block": 0.013979250285916532,
+     "day": 3.2217919327974686e-10,
+     "unit": 4.342715957222336e-10,
+     "stall": 0.9789886461003892
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9650093958144726
+   },
+   "CoAuthor": {
+    "n_lengths": 143,
+    "shares": {
+     "writer": 0.06385587755983786,
+     "unit": 0.3498992502221924,
+     "stall": 0.5862448722179697
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.2363456219957773
+   }
+  },
+  "W60_fix10s_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 21946,
+    "shares": {
+     "writer": 0.010449982765676226,
+     "block": 0.028096817638460708,
+     "day": 4.235356060404794e-09,
+     "unit": 3.889014054049311e-09,
+     "stall": 0.961453191471493
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9333563738330323
+   },
+   "CS1 2021": {
+    "n_lengths": 6487,
+    "shares": {
+     "writer": 0.014984509828563159,
+     "block": 0.012380573633514256,
+     "day": 0.010915240445005048,
+     "unit": 0.0005243953225772154,
+     "stall": 0.9611952807703403
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9462107709417772
+   },
+   "CoAuthor": {
+    "n_lengths": 145,
+    "shares": {
+     "writer": 0.07608520471053,
+     "unit": 0.3880237604283922,
+     "stall": 0.5358910348610777
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.1478672744326855
+   }
+  },
+  "W60_fix30s_net_replay": {
+   "CS1 2019": {
+    "n_lengths": 23368,
+    "shares": {
+     "writer": 0.018888127514229372,
+     "block": 0.035865749410102954,
+     "day": 1.0020628331275196e-10,
+     "unit": 0.0006486923390126512,
+     "stall": 0.9445974306364487
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9087316812263457
+   },
+   "CS1 2021": {
+    "n_lengths": 6742,
+    "shares": {
+     "writer": 0.01930145303890149,
+     "block": 0.029737032266721274,
+     "day": 2.4181643229826678e-09,
+     "unit": 3.850332079097704e-10,
+     "stall": 0.9509615118911797
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9212244796244584
+   },
+   "CoAuthor": {
+    "n_lengths": 128,
+    "shares": {
+     "writer": 0.262842288069985,
+     "unit": 0.04089399385450552,
+     "stall": 0.6962637180755095
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.43342143000552447
+   }
+  },
+  "W60_fix30s_net_g5": {
+   "CS1 2019": {
+    "n_lengths": 21180,
+    "shares": {
+     "writer": 0.012695141288169462,
+     "block": 0.017118553828856364,
+     "day": 1.1849259130563562e-08,
+     "unit": 0.0028010228456599715,
+     "stall": 0.9673852701880551
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9502667163591987
+   },
+   "CS1 2021": {
+    "n_lengths": 5879,
+    "shares": {
+     "writer": 0.011134306127120271,
+     "block": 0.013815968184217776,
+     "day": 1.0140488090530571e-10,
+     "unit": 1.2252368032623203e-10,
+     "stall": 0.9750497254647335
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9612337572805156
+   },
+   "CoAuthor": {
+    "n_lengths": 134,
+    "shares": {
+     "writer": 0.2831033075263589,
+     "unit": 4.207903720326191e-10,
+     "stall": 0.7168966920528508
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.43379338452649185
+   }
+  },
+  "W60_fix30s_net_g30": {
+   "CS1 2019": {
+    "n_lengths": 24790,
+    "shares": {
+     "writer": 0.01887671122283269,
+     "block": 0.03778257754478898,
+     "day": 3.889769347694276e-10,
+     "unit": 0.0013346096968862606,
+     "stall": 0.9420061011465152
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9042235236017262
+   },
+   "CS1 2021": {
+    "n_lengths": 7229,
+    "shares": {
+     "writer": 0.02069581182654502,
+     "block": 0.03010146768129401,
+     "day": 7.178426792144449e-08,
+     "unit": 1.0041510617160983e-09,
+     "stall": 0.949202647703742
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.919101180022448
+   },
+   "CoAuthor": {
+    "n_lengths": 136,
+    "shares": {
+     "writer": 0.31095862721757667,
+     "unit": 1.3897646008226501e-09,
+     "stall": 0.6890413713926586
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.378082744175082
+   }
+  },
+  "W60_fix30s_ins_replay": {
+   "CS1 2019": {
+    "n_lengths": 16011,
+    "shares": {
+     "writer": 0.01142846061198585,
+     "block": 0.01777245917344442,
+     "day": 0.008299089852495325,
+     "unit": 2.7968816552381015e-09,
+     "stall": 0.9624999875651928
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9447275283917485
+   },
+   "CS1 2021": {
+    "n_lengths": 4888,
+    "shares": {
+     "writer": 0.007314788528518266,
+     "block": 0.004245856140759214,
+     "day": 5.347537728088962e-06,
+     "unit": 0.011955386701568338,
+     "stall": 0.976478621091426
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9645232343898577
+   },
+   "CoAuthor": {
+    "n_lengths": 68,
+    "shares": {
+     "writer": 0.021739673944434223,
+     "unit": 0.19165285833095122,
+     "stall": 0.7866074677246145
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.5949546093936633
+   }
+  },
+  "W60_fix30s_ins_g5": {
+   "CS1 2019": {
+    "n_lengths": 13448,
+    "shares": {
+     "writer": 0.0048658158179550595,
+     "block": 1.1542361834012352e-09,
+     "day": 0.00551562983077335,
+     "unit": 6.237148366635719e-09,
+     "stall": 0.989618546959887
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9841029171291137
+   },
+   "CS1 2021": {
+    "n_lengths": 3948,
+    "shares": {
+     "writer": 0.0004120838006447745,
+     "block": 2.850327433374606e-09,
+     "day": 6.64120353267629e-09,
+     "unit": 1.6112062705731313e-09,
+     "stall": 0.999587905096618
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9991758212959733
+   },
+   "CoAuthor": {
+    "n_lengths": 63,
+    "shares": {
+     "writer": 0.024753837457546377,
+     "unit": 9.836872732265754e-11,
+     "stall": 0.9752461624440849
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.9504923249865386
+   }
+  },
+  "W60_fix30s_ins_g30": {
+   "CS1 2019": {
+    "n_lengths": 16793,
+    "shares": {
+     "writer": 0.011627434550561836,
+     "block": 0.016720178187536332,
+     "day": 0.008689218286673841,
+     "unit": 3.2515215582667944e-10,
+     "stall": 0.9629631686500758
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9462429904625395
+   },
+   "CS1 2021": {
+    "n_lengths": 5183,
+    "shares": {
+     "writer": 0.009535793335370087,
+     "block": 0.002525316303447763,
+     "day": 5.07063536770707e-10,
+     "unit": 0.011341238223014192,
+     "stall": 0.9765976516311043
+    },
+    "converged": true,
+    "method": "nm",
+    "stall_minus_max_other": 0.9652564134080902
+   },
+   "CoAuthor": {
+    "n_lengths": 65,
+    "shares": {
+     "writer": 0.13329409536080158,
+     "unit": 8.736143358110949e-11,
+     "stall": 0.8667059045518369
+    },
+    "converged": true,
+    "method": "powell",
+    "stall_minus_max_other": 0.7334118091910353
+   }
+  }
+ }
+}

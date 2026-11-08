@@ -1,0 +1,51 @@
+{
+ "cs1_2019_seen": {
+  "units": 1078,
+  "writers": 338,
+  "tasks": 10
+ },
+ "cs1_2019_opened": {
+  "units": 438,
+  "writers": 145,
+  "tasks": 10
+ },
+ "cs1_2021_seen": {
+  "units": 177,
+  "writers": 31,
+  "tasks": 8
+ },
+ "klicke": {
+  "units": 4992
+ },
+ "coauthor": {
+  "units": 1157,
+  "writers": 43
+ },
+ "dropped_units_short_writers": {
+  "CS1 2019": 47,
+  "KLiCKe": 84,
+  "CoAuthor": 2
+ },
+ "by_dataset": {
+  "CS1 2019": {
+   "units": 1469,
+   "writers": 459,
+   "replay_onsets": 33710
+  },
+  "CS1 2021": {
+   "units": 177,
+   "writers": 31,
+   "replay_onsets": 6217
+  },
+  "CoAuthor": {
+   "units": 1155,
+   "writers": 41,
+   "replay_onsets": 1518
+  },
+  "KLiCKe": {
+   "units": 4908,
+   "writers": 4908,
+   "replay_onsets": 33003
+  }
+ }
+}

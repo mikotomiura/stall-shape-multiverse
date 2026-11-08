@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite it and the manuscript it accompanies."
+type: software
+title: "Code, conditions and aggregate results of 'What moves with the pause definition and the adjustment: a multiverse diagnostic of pause and stall labels in keystroke logs'"
+abstract: >-
+  A multiverse diagnostic of keystroke pause and stall labels. A window-based stall detector was applied to four
+  keystroke datasets released for research (two editions of an introductory programming course, an essay corpus and a
+  corpus of writing with model suggestions), its window, threshold, stop condition and segmentation were varied over
+  89 definitions around a baseline, and a fixed-threshold pause detector was added; every conclusion is reported with
+  an interval from resampling writers. The archive holds the scripts of every computation, the conditions committed
+  before each computation (in Japanese, redacted of internal references, with an English summary), the aggregate
+  results per definition and the manuscript sources. The data and per-writer values are not included.
+authors:
+  - family-names: Miura
+    given-names: Mikoto
+    affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0000-4196-0508"
+doi: 10.5281/zenodo.24047695
+version: 0.1.0
+license:
+  - MIT
+  - CC-BY-4.0
+references:
+  - type: software
+    title: "Code, conditions and aggregate results of 'The 30-second signal changes of a hand-set keystroke state estimator before code-writing stalls'"
+    doi: 10.5281/zenodo.24026278
+    authors:
+      - family-names: Miura
+        given-names: Mikoto

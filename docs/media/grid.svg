@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="The four axes of the stall detector and their levels">
+<rect width="900" height="330" rx="16" fill="#ffffff"/>
+<text x="32" y="44" font-size="19" font-weight="700" fill="#0b0b0b">One detector, four choices, 90 definitions</text>
+<text x="32" y="68" font-size="13" fill="#52514e">Every combination is one definition; the starred levels make the baseline. Blue: writer-relative thresholds; orange: fixed seconds.</text>
+<text x="32" y="104" font-size="13" font-weight="700" fill="#52514e">WINDOW W</text>
+<rect x="32" y="116" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#d6d5d0"/>
+<text x="124" y="132" font-size="13" fill="#0b0b0b" text-anchor="middle">15 s</text>
+<rect x="32" y="146" width="184" height="24" rx="12" fill="#0b0b0b" fill-opacity="1" stroke="#d6d5d0"/>
+<text x="124" y="162" font-size="13" fill="#ffffff" text-anchor="middle">30 s</text>
+<rect x="32" y="176" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#d6d5d0"/>
+<text x="124" y="192" font-size="13" fill="#0b0b0b" text-anchor="middle">60 s</text>
+<text x="232" y="140" font-size="22" fill="#52514e" text-anchor="middle">&#215;</text>
+<text x="250" y="104" font-size="13" font-weight="700" fill="#52514e">THRESHOLD Θ</text>
+<rect x="250" y="116" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#2a78d6"/>
+<text x="341" y="132" font-size="13" fill="#2a78d6" text-anchor="middle">q 0.95</text>
+<rect x="250" y="146" width="184" height="24" rx="12" fill="#2a78d6" fill-opacity="1" stroke="#2a78d6"/>
+<text x="341" y="162" font-size="13" fill="#ffffff" text-anchor="middle">q 0.99</text>
+<rect x="250" y="176" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#2a78d6"/>
+<text x="341" y="192" font-size="13" fill="#2a78d6" text-anchor="middle">q 0.995</text>
+<rect x="250" y="206" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#eb6834"/>
+<text x="341" y="222" font-size="13" fill="#eb6834" text-anchor="middle">10 s</text>
+<rect x="250" y="236" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#eb6834"/>
+<text x="341" y="252" font-size="13" fill="#eb6834" text-anchor="middle">30 s</text>
+<text x="450" y="140" font-size="22" fill="#52514e" text-anchor="middle">&#215;</text>
+<text x="467" y="104" font-size="13" font-weight="700" fill="#52514e">CONDITION A</text>
+<rect x="467" y="116" width="184" height="24" rx="12" fill="#0b0b0b" fill-opacity="1" stroke="#d6d5d0"/>
+<text x="559" y="132" font-size="13" fill="#ffffff" text-anchor="middle">net</text>
+<rect x="467" y="146" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#d6d5d0"/>
+<text x="559" y="162" font-size="13" fill="#0b0b0b" text-anchor="middle">characters</text>
+<text x="668" y="140" font-size="22" fill="#52514e" text-anchor="middle">&#215;</text>
+<text x="684" y="104" font-size="13" font-weight="700" fill="#52514e">SEGMENTATION</text>
+<rect x="684" y="116" width="184" height="24" rx="12" fill="#0b0b0b" fill-opacity="1" stroke="#d6d5d0"/>
+<text x="776" y="132" font-size="13" fill="#ffffff" text-anchor="middle">default</text>
+<rect x="684" y="146" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#d6d5d0"/>
+<text x="776" y="162" font-size="13" fill="#0b0b0b" text-anchor="middle">5 min gaps</text>
+<rect x="684" y="176" width="184" height="24" rx="12" fill="#ffffff" fill-opacity="1" stroke="#d6d5d0"/>
+<text x="776" y="192" font-size="13" fill="#0b0b0b" text-anchor="middle">30 min gaps</text>
+<line x1="32" x2="868" y1="284" y2="284" stroke="#e4e3df"/>
+<text x="32" y="310" font-size="14" fill="#0b0b0b"><tspan font-weight="700">3 × 5 × 2 × 3 = 90</tspan> stall definitions (baseline + 89)</text>
+<text x="868" y="310" font-size="14" fill="#52514e" text-anchor="end">plus a pause detector: interval above 2, 5 or 10 s (18)</text>
+</svg>

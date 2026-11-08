@@ -1,0 +1,49 @@
+\section{Discussion}
+\label{sec:discussion}
+
+The stall--score association changed direction only where a 15-s window met a writer quantile, the pause association
+changed between mostly negligible values, and adjusting for length moved both upwards. For researchers in educational
+data mining and learning analytics who relate pause, stall or inactivity rates to outcomes or compare them across
+datasets, a report should therefore contain the range of the
+conclusion across definitions and adjustments, with intervals, rather than the point value of one definition. On the
+default and precedented stall levels, our result resembles earlier multiverse analyses, in which an eye-movement effect
+kept its existence and changed its size \cite{godwin2025multiverse} and boundary pausing in CS1 changed strength with
+the split at 2~s but not direction \cite{koutcheme2026keystroke}; widening the grid to levels around the default also
+changed the direction.
+
+\paragraph{Why the direction can change.} A rate of labels per hour is a count, and counts carry how much and how fast
+a writer types as well as how often the writer stops. A writer-quantile pause threshold makes this explicit: its rate
+follows the rate of key presses and correlated with the score at about $+0.6$. Prior work reports the same split
+between counts and durations: pause counts can correlate positively with scores through text length, whereas pause
+durations correlate negatively \cite{schaller2026keyscore}. Given length both detectors moved upwards, but
+given speed, an exploratory analysis, they answered differently: every stall definition was negative while most fixed
+pause thresholds were positive. The ten positive stall definitions, which pair a short window with a writer quantile,
+all turned negative given speed, so that corner may follow typing speed through the writer quantile. These are
+patterns, not a tested mechanism; the association that remains after either adjustment is the part of the rate that
+does not overlap with the covariate, and speed and length may confound or mediate it \cite{mackinnon2000equivalence}.
+
+\paragraph{Existing answers to arbitrary thresholds.} Mixture models, personalised thresholds, state models, location
+classes and controls for typing skill (Section~\ref{sec:related}) each choose a threshold, a model or a control. The
+diagnostic applies to them in the same way: vary the choice they make and report whether the conclusion moves. Methods
+that keep the uncertainty of the choice, such as probabilistic assignment of pauses to components or averaging over
+models, are the natural complement.
+
+\paragraph{What the criteria established.} The changes of direction (by a lenient criterion), the stable presence of
+the stall association, the moving rank order, the length-adjusted stall values, $\varphi$ against 1.5 and the stable
+length component rest on criteria set before each quantity was seen; the rest was judged after seeing results or is
+exploratory (S1). We did not test whether the definitional spread changes the performance of a predictor
+or a decision about when to intervene.
+
+\paragraph{Recommendation.} When reporting an association or a comparison based on a pause or stall rate, report the
+value of each axis, vary each axis over its range in prior practice and around the default, and report the spread with
+intervals, with and without adjustment for quantities that do not contain the label, such as the length of the
+product; adjustment is an axis as well, since it can change the conclusion as a definition can. As a proposal formed
+after seeing these results, sort each definition's interval into below $-0.1$, above $+0.1$, within $\pm 0.1$
+(negligible) or imprecise (crossing a bound). Read a group as imprecise when at least half of its intervals are, as a
+consistent direction or a negligible association when one class holds at least 90\% of the classified definitions, and
+otherwise as dependent on the definition, a reading that includes moves between negative and negligible values; give
+the share of the leading class and the number of imprecise intervals with each reading, since the reading is sensitive
+near the 90\% bound. Because these shares depend on how finely each axis is cut and on which constructs are pooled,
+apply the reading to the grid of the default and of levels with precedent, within each family of thresholds, and to the
+grid with the levels around the default added (Table~\ref{tab:read}). The band of $\pm 0.1$ is for correlations;
+ratios and $\varphi$ need their own reference points and bands. The code is released for this purpose.

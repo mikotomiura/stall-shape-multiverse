@@ -1,0 +1,44 @@
+{
+ "B0": {
+  "CS1 2019": {
+   "match": 1469,
+   "mismatch": 0
+  },
+  "CS1 2021": {
+   "match": 177,
+   "mismatch": 0
+  },
+  "KLiCKe": {
+   "match": 4908,
+   "mismatch": 0
+  },
+  "CoAuthor": {
+   "match": 1155,
+   "mismatch": 0
+  }
+ },
+ "work2019_w15": {
+  "match": 1078,
+  "mismatch": 0,
+  "onsets_mine": 30323,
+  "onsets_replay": 30323
+ },
+ "work2019_w60": {
+  "match": 1078,
+  "mismatch": 0,
+  "onsets_mine": 17348,
+  "onsets_replay": 17348
+ },
+ "work2019_q995": {
+  "match": 809,
+  "mismatch": 269,
+  "onsets_mine": 14933,
+  "onsets_replay": 14624
+ },
+ "work2019_q995_warm200": {
+  "match": 1078,
+  "mismatch": 0,
+  "onsets_mine": 14624,
+  "onsets_replay": 14624
+ }
+}

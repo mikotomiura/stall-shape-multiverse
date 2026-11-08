@@ -1,0 +1,44 @@
+\section{Limitations}
+\label{sec:limitations}
+
+\paragraph{No ground truth.} The data have no self-reports or think-aloud, so we cannot say which definition is right.
+A stall is a stop in net character production, not a judgement that the writer was stuck.
+
+\paragraph{The range varied.} All proportions are of the definitions examined. The stall grid is centred on one
+detector's default, no window length has a use outside the detector, and fixed thresholds make up four in ten stall definitions. The
+stall detector does not reach pauses shorter than about 15~s, and the pause family covers 2 to 10~s and writer
+quantiles; we did not vary thresholds below 2~s, thresholds proportional to within-word speed \cite{guo2020scenario}
+or pauses split by linguistic location, because we fixed grids that apply alike to code and essays. We varied the rate per observed hour only; rates per key press or per
+word and measures of pause duration, such as mixture components, were not varied, so the recommendation is limited to
+rates. We did not compare groups within a dataset.
+
+\paragraph{Differences between datasets.} The datasets differ at once in the task, the recording (CS1 key presses are
+reconstructed from edit events) and the length of units, so differences between them are not attributed to a cause.
+
+\paragraph{Intervals and samples.} The primary intervals hold each writer's quantile threshold as detected and leave
+out its variation. A resample that redraws it causally left the score and ratio conclusions as they were, but for
+$\varphi$ it was shifted above the point values, so how the variation of the threshold bears on $\varphi$ is not
+resolved (S2). The default observation intervals depend on the companion study's estimator; every result is also
+reported for two segmentations that need only the time of each key press and whether it inserted or deleted a
+character.
+A definition changes the time in which a stall can be detected (the writer-quantile family
+cannot detect before the 100th interval, 3.2--10.3\% of the exposure), which units reach 5 minutes of exposure and, for $\varphi$, which writers
+have stalls at all, so definitions differ in their samples as well as their labels. Removing the undetectable time (Section~\ref{sec:detector})
+changed no score interval from one side of zero to the other, but moved the CS1 ratio and $\varphi$ in the CS1 2021
+assignments above 25\% and left the CS1 2021 blocks uncounted (S2).
+
+\paragraph{Counts and lengths.} The levels of variation in counts could not be separated (S6). The dispersion of
+assignments includes differences between assignments, and a $\varphi$ near 1 does not establish a Poisson process: the
+window of the detector can make counts underdispersed while heterogeneity makes them overdispersed. The length
+decomposition excludes stalls that did not resume, and CS1 days are inferred from gaps of 6~h.
+
+\paragraph{One outcome and its length.} The score association rests on one holistic score in KLiCKe and was not checked
+against a second outcome. Its inter-rater agreement ($\kappa$ 0.60 before and 0.76 after discussion) is imperfect, which shrinks
+correlations towards zero and can move intervals into the negligible class. The score reflects essay length strongly (0.75), so part of any label's association with it
+can run through length; and because the observation time is nearly fixed in KLiCKe, time spent in stalls reduces the
+time left for writing, so adjusting for length removes part of what the label counts. Speed and length were adjusted linearly on ranks, and non-linear remainders were not examined.
+We did not separate stalls by their position in the session (planning early, review or waiting late under the
+fixed 30-minute timer), so the positive corner and the positive length-adjusted values cannot be told apart from that
+route. The score association rests on adults recruited online, not on a course. We did not evaluate the labels as
+predictors. We say nothing about Japanese input, input method editors, natural work
+or other populations.

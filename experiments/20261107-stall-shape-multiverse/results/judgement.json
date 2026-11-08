@@ -1,0 +1,103 @@
+{
+ "M": {
+  "M1_rank_changed_share": 0.8888888888888888,
+  "M1": true,
+  "M2_flip_share": {
+   "CS1 2019 block": 0.2111111111111111,
+   "CS1 2019 task": 0.6444444444444445,
+   "CS1 2021 block": 0.6555555555555556,
+   "CS1 2021 task": 0.34444444444444444,
+   "CoAuthor session": 0.0
+  },
+  "M2": true,
+  "M3_ratio_le60_over_all": 0.7653872269352946,
+  "M3": false,
+  "M4": {
+   "CS1 2019": {
+    "low_agree_share": 0.5111111111111111,
+    "low_agree_with_close_rate": 4
+   },
+   "CS1 2021": {
+    "low_agree_share": 0.35555555555555557,
+    "low_agree_with_close_rate": 1
+   },
+   "CoAuthor": {
+    "low_agree_share": 0.8,
+    "low_agree_with_close_rate": 0
+   },
+   "KLiCKe": {
+    "low_agree_share": 0.7666666666666667,
+    "low_agree_with_close_rate": 6
+   }
+  },
+  "M4_any": true,
+  "M_holds": true
+ },
+ "V": {
+  "CS1 2019": {
+   "recovered": {
+    "writer": false,
+    "task_common": false,
+    "task_in_writer": false,
+    "day": false,
+    "block": false
+   },
+   "below_writer_share": 0,
+   "writer_share": null,
+   "holds": false
+  },
+  "CS1 2021": {
+   "recovered": {
+    "writer": true,
+    "task_common": true,
+    "task_in_writer": false,
+    "day": false,
+    "block": false
+   },
+   "below_writer_share": 0,
+   "writer_share": 0.30573736017210945,
+   "holds": false
+  }
+ },
+ "V_holds": false,
+ "O": {
+  "CS1 2019 block": {
+   "phi": 1.4382616734865625,
+   "ci": [
+    1.3488150398911238,
+    1.5321683685187555
+   ]
+  },
+  "CS1 2019 task": {
+   "phi": 1.95434096350536,
+   "ci": [
+    1.7573683704452259,
+    2.1504948323288215
+   ]
+  },
+  "CS1 2021 block": {
+   "phi": 1.8171987588908918,
+   "ci": [
+    1.5685022269050015,
+    2.1001658024739447
+   ]
+  },
+  "CS1 2021 task": {
+   "phi": 3.8249742825490416,
+   "ci": [
+    3.1099223075788025,
+    4.594624100024129
+   ]
+  },
+  "CoAuthor session": {
+   "phi": 1.0777838225584098,
+   "ci": [
+    0.9810189195385599,
+    1.1906214467500078
+   ]
+  }
+ },
+ "O_count": 3,
+ "O_holds": true,
+ "recommendation_by_rule": "単独にする"
+}

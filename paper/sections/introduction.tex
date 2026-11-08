@@ -1,0 +1,51 @@
+\section{Introduction}
+\label{sec:intro}
+
+Pauses, stalls and periods of inactivity in keystroke logs are among the most widely used process measures in
+educational data mining. In introductory programming they serve to estimate time on task
+\cite{hart2023time,hart2025time,edwards2022engagement} and are related to course performance
+\cite{shrestha2022pausing,koutcheme2026keystroke}; in writing research they measure planning and fluency
+\cite{roeser2024disfluencies,torrance2024methods,chukharev2014pauses,guo2020scenario}. Every such measure starts from a
+definition: how long a gap must be, relative to what, over which stretch of the log, and what counts as producing text.
+These choices differ from study to study. Time-on-task thresholds have ranged from five minutes to one hour
+\cite{hart2025time}, and fixed pause thresholds in writing are acknowledged to have no theoretical ground between about
+250~ms and 10~s \cite{torrance2024methods}.
+
+That analytic choices can change conclusions is known. In learning analytics the strategy for estimating time on task
+changed the results of the same regression \cite{kovanovic2015time}; operationalisations of wheel spinning disagreed on
+most cases \cite{zhang2019wheel}; models of student success differ across a multiverse of reasonable choices
+\cite{tang2025multiverse}; and in eye-movement research a multiverse of cleaning procedures left the existence of an
+effect intact while changing its size \cite{godwin2025multiverse}. What has not been examined is how far the conclusions
+that readers draw from a keystroke pause or stall label---its association with the quality of a product, comparisons of
+rates between datasets, and the count and length structure within writers---move across definitions, and which of them
+stay.
+
+We answer this with a diagnostic. We take one window-based stall detector, which labels a stop in net character
+production once a condition has held for a window and then a threshold (more than 15~s in our grid), and vary its four
+choices (the window, the threshold, the condition for a stop and the segmentation of observation) over 89 definitions
+around its default. Because the grid centres on one detector, we add a second detector of the kind used in writing
+research, which counts inter-key intervals above a fixed threshold of 2 to 10~s (18 definitions). Both are applied to
+four datasets released for research, from three sources: two editions of a CS1 course and two writing corpora. Each
+conclusion is reported with an interval from resampling writers, so that the spread across definitions can be set
+beside sampling variation. We do not evaluate the labels as predictors or as triggers for an intervention; we ask the
+prior question of whether the conclusions that such uses rest on are stable.
+
+The main result concerns the association with essay quality, scored on a rubric of the kind used in writing
+assessment. By criteria set before the computations, the presence of an association stays across stall definitions
+(82 of 89) and its direction changes. Described after seeing the results, the change of direction is confined to a
+level around the default (a 15-s window) combined with a writer quantile: on the grid of default and precedented
+levels the association is negative or negligible, and among fixed pause thresholds it is mostly negligible. Given essay
+length, which correlates with the score at 0.75, no stall definition is negative and most values are negligible,
+whereas half of the pause definitions rise above $+0.1$ (Sections~\ref{sec:res-score} and~\ref{sec:res-adjust}). The
+same diagnostic applied to comparisons between datasets and to the structure within writers shows that the rank order
+of the datasets moves, that a rate ratio between the two CS1 editions reverses for a fifth of the definitions, below a
+criterion set after seeing point values but above it when the first minute of each observation interval is
+excluded, that whether within-writer dispersion exceeds 1.5 depends on the definition in
+two CS1 cells, and that the largest component of stall length stays (Section~\ref{sec:res-other}).
+
+Our contribution is a map, for pause and stall rates as used in educational data mining, of which conclusions move
+with the definition and the adjustment and which stay: the association with an outcome, comparisons between datasets
+and the structure within writers. From it follows a reporting convention: give the value of each axis and the range
+of a conclusion across definitions and adjustments, with intervals. As a proposal formed after seeing these results,
+we add a reading of that range by classes of interval: consistent in direction, negligible, dependent on the
+definition, or imprecise. The score association in one corpus is the worked example.

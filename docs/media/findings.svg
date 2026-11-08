@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="What moves with the definition and what stays">
+<rect width="900" height="380" rx="16" fill="#ffffff"/>
+<rect x="28" y="24" width="416" height="332" rx="12" fill="#eb6834" fill-opacity="0.07" stroke="#eb6834" stroke-opacity="0.45"/>
+<circle cx="54" cy="54" r="7" fill="#eb6834"/>
+<text x="70" y="59" font-size="14" font-weight="700" fill="#0b0b0b" letter-spacing="1">MOVES WITH THE DEFINITION</text>
+<text x="54" y="98" font-size="15" font-weight="700" fill="#0b0b0b">Direction of the stall–score link</text>
+<text x="54" y="118" font-size="13" fill="#52514e">10 of 89 positive, all 15-s window + writer quantile</text>
+<text x="54" y="154" font-size="15" font-weight="700" fill="#0b0b0b">Reading after adjusting for length</text>
+<text x="54" y="174" font-size="13" fill="#52514e">given length, no stall interval below zero</text>
+<text x="54" y="210" font-size="15" font-weight="700" fill="#0b0b0b">Rank order of the four datasets</text>
+<text x="54" y="230" font-size="13" fill="#52514e">differs from the baseline for 80 of 89</text>
+<text x="54" y="266" font-size="15" font-weight="700" fill="#0b0b0b">Dispersion within writers vs 1.5</text>
+<text x="54" y="286" font-size="13" fill="#52514e">depends on the definition in two CS1 cells</text>
+<text x="54" y="322" font-size="15" font-weight="700" fill="#0b0b0b">Ratio of CS1 2019 to CS1 2021</text>
+<text x="54" y="342" font-size="13" fill="#52514e">reverses for 20 of 89 (22%), near the 25% criterion</text>
+<rect x="464" y="24" width="416" height="332" rx="12" fill="#1baf7a" fill-opacity="0.07" stroke="#1baf7a" stroke-opacity="0.45"/>
+<circle cx="490" cy="54" r="7" fill="#1baf7a"/>
+<text x="506" y="59" font-size="14" font-weight="700" fill="#0b0b0b" letter-spacing="1">STAYS ACROSS DEFINITIONS</text>
+<text x="490" y="98" font-size="15" font-weight="700" fill="#0b0b0b">Presence of the stall–score link</text>
+<text x="490" y="118" font-size="13" fill="#52514e">interval excludes zero for 82 of 89</text>
+<text x="490" y="154" font-size="15" font-weight="700" fill="#0b0b0b">Sign with fixed thresholds</text>
+<text x="490" y="174" font-size="13" fill="#52514e">all 36 fixed-second definitions negative</text>
+<text x="490" y="210" font-size="15" font-weight="700" fill="#0b0b0b">Largest component of stall length</text>
+<text x="490" y="230" font-size="13" fill="#52514e">stall-to-stall share stays largest in all 89 (CS1)</text>
+</svg>

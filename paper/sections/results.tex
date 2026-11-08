@@ -1,0 +1,330 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{The label--essay-score association moves with the definition, in direction only at some levels}
+\label{sec:res-score}
+
+A study that reports how a pause or stall rate relates to the quality of a product usually reports one definition. We
+asked whether that association depends on the definition, and measured, for each definition, the Spearman
+correlation between the KLiCKe writers' rates and their holistic scores, with a resampled interval
+(Figure~\ref{fig:score}, Table~\ref{tab:pause}).
+
+\paragraph{Stalls.} Under the baseline the correlation was $-0.063$ [$-0.091$, $-0.034$]. Two criteria had been set
+before the association was seen. The presence of an association would count as moving if the share of definitions
+with an interval excluding zero lay between 25\% and 75\%; it was 82 of 89 (92\%), so by that criterion presence did not
+move. The direction would count as changing if one definition had an interval on the other side of zero; 10 did (also
+when the point value is required to lie there), so the direction changed. All 10 had the shortest window,
+$W = 15$~s, the level we set at half the default, and a writer-quantile $\theta$; among the 59 definitions with
+other windows, 57 were negative and none was positive, and on the grid of default and precedented levels
+(Table~\ref{tab:grid}) none was positive either. Across the 89 definitions the
+correlation ranged from $-0.25$ to $+0.14$ (median $-0.14$), with intervals negative for 72, positive for 10 and
+including zero for 7. By point value, 58 definitions gave a negative correlation of at least 0.1 in absolute value and 3
+a positive one; all 36 fixed-second definitions were negative. The positive corner is not a floor effect of rare
+stalls (S3).
+
+\paragraph{Pauses.} For the second detector the reading set in advance was that the direction changes if at least one
+definition has an interval above zero and one below. With fixed thresholds, the interval was below zero for 7 of the 18
+definitions, all but one at 10~s, and above zero for 3, on character intervals at 2 and 5~s (Table~\ref{tab:pause}).
+The direction therefore changed, but between mostly negligible values: 13 of the 18 intervals lay within $\pm 0.1$, and only two definitions at
+10~s had a point value at or below $-0.10$ ($-0.101$ and $-0.127$). By the criterion for presence used for stalls, which was not
+set in advance for pauses, 10 of 18 intervals (56\%) excluded zero, so presence moved as well. The 10-s values are
+smaller in magnitude than the $-0.15$ to $-0.43$ reported for pause durations and latencies, a different measure
+(Section~\ref{sec:related}). The 18 definitions with a writer-quantile threshold, a control for the rate of key presses
+(Section~\ref{sec:grid}), correlated with the score at $+0.58$ to $+0.67$, close to the 0.62 of the rate of key presses
+itself; the reading stated for all 36 definitions is in S1.
+
+A reader who took one definition would report a small negative relation (any fixed stall threshold), a
+negligible one (the stall baseline, most fixed pause thresholds), or a positive one (a 15-s stall window with a writer
+quantile); a writer-quantile pause threshold would report the rate of key presses.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[name=raw, width=\textwidth, height=4.8cm, xmin=0, xmax=91, ymin=-0.33, ymax=0.28,
+  ylabel={Spearman $\rho$}, xticklabels={}, ytick={-0.3,-0.2,-0.1,0,0.1,0.2}, grid=major, grid style={figband},
+  title={(a) Stall rate and holistic score, 90 definitions ordered by $\rho$}, title style={font=\footnotesize},
+  tick label style={font=\footnotesize}, label style={font=\footnotesize},
+  legend style={font=\scriptsize, at={(0.02,0.98)}, anchor=north west}, legend cell align=left]
+  \addplot[only marks, mark=*, mark size=1.1pt, color=figc1, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc1!60}] table[x=i, y=rho, y error plus expr=\thisrow{hi}-\thisrow{rho},
+    y error minus expr=\thisrow{rho}-\thisrow{lo}, discard if not={fam}{1}] {figdata/score.csv};
+  \addlegendentry{writer-quantile $\theta$}
+  \addplot[only marks, mark=square*, mark size=1.1pt, color=figc2, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc2!60}] table[x=i, y=rho, y error plus expr=\thisrow{hi}-\thisrow{rho},
+    y error minus expr=\thisrow{rho}-\thisrow{lo}, discard if not={fam}{0}] {figdata/score.csv};
+  \addlegendentry{fixed-second $\theta$}
+  \addplot[only marks, mark=star, mark size=3.5pt, thick, color=black] table[x=i, y=rho, discard if not={b0}{1}]
+    {figdata/score.csv};
+  \addlegendentry{baseline}
+  \addplot[only marks, mark=triangle, mark size=2.2pt, color=black] table[x=i, y expr=\thisrow{hi}+0.03,
+    discard if not={W15}{1}] {figdata/score.csv};
+  \addlegendentry{$W = 15$~s}
+  \draw[black, thin] (axis cs:0,0) -- (axis cs:91,0);
+\end{axis}
+\begin{axis}[name=spd, at={(raw.south)}, anchor=north, yshift=-0.9cm, width=\textwidth, height=4cm, xmin=0, xmax=91,
+  ymin=-0.33, ymax=0.2, ylabel={partial $\rho$}, xticklabels={}, ytick={-0.3,-0.2,-0.1,0,0.1}, grid=major,
+  grid style={figband}, title={(b) Given typing speed (median interval $< 2$~s; exploratory)},
+  title style={font=\footnotesize}, tick label style={font=\footnotesize}, label style={font=\footnotesize}]
+  \addplot[only marks, mark=*, mark size=1.1pt, color=figc1, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc1!60}] table[x=i, y=adj, y error plus expr=\thisrow{ahi}-\thisrow{adj},
+    y error minus expr=\thisrow{adj}-\thisrow{alo}, discard if not={fam}{1}] {figdata/score.csv};
+  \addplot[only marks, mark=square*, mark size=1.1pt, color=figc2, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc2!60}] table[x=i, y=adj, y error plus expr=\thisrow{ahi}-\thisrow{adj},
+    y error minus expr=\thisrow{adj}-\thisrow{alo}, discard if not={fam}{0}] {figdata/score.csv};
+  \addplot[only marks, mark=star, mark size=3.5pt, thick, color=black] table[x=i, y=adj, discard if not={b0}{1}]
+    {figdata/score.csv};
+  \draw[black, thin] (axis cs:0,0) -- (axis cs:91,0);
+\end{axis}
+\begin{axis}[at={(spd.south)}, anchor=north, yshift=-0.9cm, width=\textwidth, height=4cm, xmin=0, xmax=91,
+  ymin=-0.33, ymax=0.2, ylabel={partial $\rho$}, xlabel={definitions (same order as panel a)}, xticklabels={},
+  ytick={-0.3,-0.2,-0.1,0,0.1}, grid=major, grid style={figband},
+  title={(c) Given essay length and length of observation}, title style={font=\footnotesize},
+  tick label style={font=\footnotesize}, label style={font=\footnotesize}]
+  \addplot[only marks, mark=*, mark size=1.1pt, color=figc1, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc1!60}] table[x=i, y=ln, y error plus expr=\thisrow{lhi}-\thisrow{ln},
+    y error minus expr=\thisrow{ln}-\thisrow{llo}, discard if not={fam}{1}] {figdata/score.csv};
+  \addplot[only marks, mark=square*, mark size=1.1pt, color=figc2, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc2!60}] table[x=i, y=ln, y error plus expr=\thisrow{lhi}-\thisrow{ln},
+    y error minus expr=\thisrow{ln}-\thisrow{llo}, discard if not={fam}{0}] {figdata/score.csv};
+  \addplot[only marks, mark=star, mark size=3.5pt, thick, color=black] table[x=i, y=ln, discard if not={b0}{1}]
+    {figdata/score.csv};
+  \draw[black, thin] (axis cs:0,0) -- (axis cs:91,0);
+\end{axis}
+\end{tikzpicture}
+\caption{The stall--score association in KLiCKe (4,908 writers) for the baseline and the 89 definitions, with 95\%
+intervals from resampling writers. Triangles mark the definitions with $W = 15$~s. Panels (b) and (c) keep the order of panel (a).}
+\label{fig:score}
+\end{figure}
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{The pause family: the association of the pause rate with the holistic score in KLiCKe, range over the three
+segmentations for each kind of interval and threshold, and the number of the three with an interval below or above
+zero. Every definition is in S3.}
+\label{tab:pause}
+\begin{tabular}{@{}l l r r r@{}}
+\toprule
+Interval & Threshold & $\rho$ & Below zero & Above zero \\
+\midrule
+any key & 2~s & $-0.01$ to $+0.03$ & 0 & 0 \\
+ & 5~s & $-0.04$ to $0.00$ & 1 & 0 \\
+ & 10~s & $-0.13$ to $-0.09$ & 3 & 0 \\
+character & 2~s & $+0.01$ to $+0.05$ & 0 & 2 \\
+ & 5~s & $0.00$ to $+0.03$ & 0 & 1 \\
+ & 10~s & $-0.10$ to $-0.06$ & 3 & 0 \\
+any key & quantile 0.95--0.995 & $+0.58$ to $+0.62$ & 0 & 9 \\
+character & quantile 0.95--0.995 & $+0.62$ to $+0.67$ & 0 & 9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Adjusting for essay length leaves no stall definition negative and most values negligible}
+\label{sec:res-adjust}
+
+Two quantities that do not contain the labels can carry the association: how much a writer writes and how fast.
+Essay length correlated with the score at 0.75 [0.73, 0.76], and faster writers had higher scores (Spearman $-0.53$
+between the score and the median short interval, a lower interval meaning faster typing). The length of observation
+barely varied in KLiCKe (interquartile range 26--29~min) and correlated with the score at 0.10.
+
+\paragraph{Given essay length.} Given essay length and the length of observation, the partial correlation of score and
+stall rate was positive with an interval above zero for 54 definitions, included zero for 35 and was below zero for
+none ($+0.02$ to $+0.13$; baseline $+0.057$ [$+0.029$, $+0.085$]); the 10 definitions that were positive without
+adjustment stayed positive. By the reading set before the computation, the sign became uniform: no definition was
+negative. In size, 74 of the 89 intervals lay within $\pm 0.1$, so after adjustment the stall rate carried little
+association with the score. Stalls and essay length overlap by construction: under the net rule a stall is a period in
+which the text does not grow, so the adjustment also removes part of what the stall rate measures. For the fixed pause
+thresholds, 15 of 18 were positive and none negative, and 9 had an interval above $+0.1$.
+
+\paragraph{Given typing speed (exploratory).} With the median of intervals under 2~s, the partial correlation of score and stall rate was
+negative with an interval below zero for all 89 definitions ($-0.29$ to $-0.03$; baseline $-0.18$ [$-0.21$, $-0.15$]),
+and below $-0.1$ for 71; the ten definitions with a positive unadjusted interval all had an interval below zero.
+Six ways of measuring speed gave no positive interval and 2 of
+534 intervals including zero (S3). For the fixed pause thresholds the speed-adjusted correlation went
+the other way: positive for 11 of 18 and negative for 4.
+
+Neither adjusted value is a causal effect (Section~\ref{sec:discussion}).
+
+\paragraph{Reading by classes of interval.} Table~\ref{tab:read} applies the reading proposed in
+Section~\ref{sec:discussion}, formed after seeing these results.
+Unadjusted, the fixed stall thresholds read as below $-0.1$ and the fixed pause thresholds as negligible, while the full
+stall grid depended on the definition. On the grid of default and precedented levels the reading split by the family of
+$\theta$, which the grid treats as two constructs (Section~\ref{sec:grid}): the fixed 10-s threshold read as below
+$-0.1$ and the writer quantile as negligible, each consistently. Given length, every stall group read as negligible, but
+the fixed pause thresholds came to depend on the definition, with 9 of 18 above $+0.1$: adjustment changed the reading
+as a definition does. Given speed, the full grid fell just short of a consistent reading (89.9\%).
+
+\begin{table}[t]
+\centering\scriptsize\setlength{\tabcolsep}{3pt}
+\caption{Reading of the score association by classes of interval (a rule proposed after seeing the results). Each
+cell gives the reading, the share of the leading class among the classified definitions, and the counts below
+$-0.1$ / within $\pm 0.1$ / above $+0.1$ / imprecise. Groups with the baseline: the default and precedented grid and
+its writer-quantile part; the full grid excludes it.}
+\label{tab:read}
+\begin{tabular}{@{}l l l l@{}}
+\toprule
+Group (definitions) & Unadjusted & Given length & Given speed (exploratory) \\
+\midrule
+Stalls, full grid (89) & depends (71\%): 48/17/2/22 & negligible (98\%): 0/74/1/14 & depends (89.9\%): 71/8/0/10 \\
+Stalls, fixed $\theta$ (36) & below (100\%): 36/0/0/0 & negligible (100\%): 0/33/0/3 & below (100\%): 36/0/0/0 \\
+Stalls, writer quantile (53) & depends (54\%): 12/17/2/22 & negligible (97\%): 0/41/1/11 & depends (81\%): 35/8/0/10 \\
+Stalls, default and precedented (12) & depends (62\%): 3/5/0/4 & negligible (100\%): 0/9/0/3 & below (100\%): 12/0/0/0 \\
+\quad of which fixed 10~s (3) & below (100\%): 3/0/0/0 & negligible (100\%): 0/3/0/0 & below (100\%): 3/0/0/0 \\
+\quad of which writer quantile (9) & negligible (100\%): 0/5/0/4 & negligible (100\%): 0/6/0/3 & below (100\%): 9/0/0/0 \\
+Pauses, fixed threshold (18) & negligible (100\%): 0/13/0/5 & depends (60\%): 0/6/9/3 & depends (81\%): 0/9/2/7 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The same diagnostic applied to other conclusions}
+\label{sec:res-other}
+
+The diagnostic applies to any conclusion drawn from the labels. We applied it to three more: a comparison of rates
+between datasets, a count model within writers, and the decomposition of stall length.
+
+\paragraph{Comparing rates between datasets.}
+\label{sec:res-ratio}
+Does a comparison of stall rates between datasets, such as between cohorts of a course, survive a change of
+definition? Under the baseline the rates were
+15.1 (KLiCKe), 13.1 (CS1 2019), 8.8 (CS1 2021) and 7.1 (CoAuthor) per hour; across the 89 definitions, the CS1 2019
+rate alone ranged from 4.4 to 46.0. By the criterion set before the computations (25\% of definitions), the rank
+order of the four datasets moved: it differed from the baseline order for 80 of 89 definitions, although the close
+baseline rates of CS1 2019 and KLiCKe swap alone in 11 of them. We counted a ratio as reversed when its point value and its
+interval lay on the other side of 1 from the baseline ratio, a description of each definition rather than a test over
+the grid (Figure~\ref{fig:ratio}). For the two CS1 editions,
+which share the course and the recording and which we had committed to report first, 20 of 89 definitions (22\%)
+reversed the ratio, below the 25\% we had set after seeing point values (Section~\ref{sec:status}; 22 of 89 in
+the time after the 100th interval, S2), but 23 (26\%), above it, when the first 60~s of each observation interval
+were also excluded (S2); 18 of the 20 used a fixed $\theta$. Every fixed-$\theta$ definition reversed both comparisons of
+CS1 with KLiCKe (66 and 53 reversals in all); CS1 2019 against CoAuthor reversed for 6 and the two
+writing datasets for none (S3). Among the
+fixed pause thresholds, the two CS1 editions reversed for none of 18, whereas the pairs with CoAuthor, whose pause rates
+ranged from 42 to 498 per hour, reversed for 14 and 13 (S3), so by the same criterion the direction of a ratio changed in the pause family too. The
+counts are not comparable across pairs, whose
+baseline ratios and sample sizes differ.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[name=a, width=0.52\textwidth, height=5cm, xmin=0, xmax=91, ymin=-1.1, ymax=1.2, xticklabels={},
+  ylabel={log rate ratio}, xlabel={definitions ordered by ratio}, grid=major, grid style={figband},
+  title={(a) CS1 2019 / CS1 2021}, title style={font=\footnotesize}, tick label style={font=\footnotesize},
+  label style={font=\footnotesize}]
+  \addplot[only marks, mark=*, mark size=1pt, color=figc1, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc1!60}] table[x=i, y=lr, y error plus expr=\thisrow{hi}-\thisrow{lr},
+    y error minus expr=\thisrow{lr}-\thisrow{lo}, discard if not={fam}{1}] {figdata/ratio_cs19_cs21.csv};
+  \addplot[only marks, mark=square*, mark size=1pt, color=figc2, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc2!60}] table[x=i, y=lr, y error plus expr=\thisrow{hi}-\thisrow{lr},
+    y error minus expr=\thisrow{lr}-\thisrow{lo}, discard if not={fam}{0}] {figdata/ratio_cs19_cs21.csv};
+  \addplot[only marks, mark=star, mark size=3.5pt, thick, color=black] table[x=i, y=lr, discard if not={b0}{1}]
+    {figdata/ratio_cs19_cs21.csv};
+  \draw[black, thin] (axis cs:0,0) -- (axis cs:91,0);
+\end{axis}
+\begin{axis}[at={(a.east)}, anchor=west, xshift=0.9cm, width=0.52\textwidth, height=5cm, xmin=0, xmax=91,
+  ymin=-1.1, ymax=1.2, xticklabels={}, xlabel={definitions ordered by ratio}, grid=major, grid style={figband},
+  title={(b) CS1 2019 / KLiCKe}, title style={font=\footnotesize}, tick label style={font=\footnotesize},
+  label style={font=\footnotesize}]
+  \addplot[only marks, mark=*, mark size=1pt, color=figc1, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc1!60}] table[x=i, y=lr, y error plus expr=\thisrow{hi}-\thisrow{lr},
+    y error minus expr=\thisrow{lr}-\thisrow{lo}, discard if not={fam}{1}] {figdata/ratio_cs19_kl.csv};
+  \addplot[only marks, mark=square*, mark size=1pt, color=figc2, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc2!60}] table[x=i, y=lr, y error plus expr=\thisrow{hi}-\thisrow{lr},
+    y error minus expr=\thisrow{lr}-\thisrow{lo}, discard if not={fam}{0}] {figdata/ratio_cs19_kl.csv};
+  \addplot[only marks, mark=star, mark size=3.5pt, thick, color=black] table[x=i, y=lr, discard if not={b0}{1}]
+    {figdata/ratio_cs19_kl.csv};
+  \draw[black, thin] (axis cs:0,0) -- (axis cs:91,0);
+\end{axis}
+\end{tikzpicture}
+\caption{Log ratios of stall rates with 95\% intervals. Circles: writer-quantile $\theta$; squares: fixed seconds;
+star: baseline. A ratio reverses when its point value and its interval lie on the other side of zero from the baseline.}
+\label{fig:ratio}
+\end{figure}
+
+\paragraph{Departure from a constant rate within writers.}
+\label{sec:res-phi}
+Do the counts of a writer's sub-units vary more than a constant rate per writer would make them vary? The answer
+decides how much dispersion a count model of stalls has to allow. We measured the dispersion index $\varphi$ with the writer's own rate as the expectation (Table~\ref{tab:phi},
+Figure~\ref{fig:phi}). Under the baseline, $\varphi$ exceeded 1 in all four CS1 cells (1.44 to 3.82) and not in
+CoAuthor sessions (1.08). Across the 89 definitions, the median $\varphi$ was close to 1 in CS1 2019 blocks and CoAuthor
+sessions (1.03 and 1.02), 1.21 in CS1 2021 blocks and 1.25 and 2.28 in the CS1 assignments; the interval exceeded 1 for
+43 to 68 definitions in the CS1 cells and for 7 in CoAuthor. The baseline lay above the median of the 89 definitions in
+every CS1 cell. The conclusion against 1.5 reversed, by the same counting rule, for 54 definitions in the CS1 2019
+assignments, 49 in the CS1 2021 blocks, 19 (21\%) in the CS1 2021 assignments and none in CoAuthor; in CS1 2019 blocks
+the baseline interval contained 1.5, so no reversal was counted. In the
+CS1 2019 assignments and the CS1 2021 blocks, then, whether $\varphi$ lay above or below 1.5 depended on the definition;
+in the other cells the reversals stayed under 25\% or could not be counted. Restricted to the time after the 100th
+interval, the two cells were the CS1 2019 and CS1 2021 assignments (57 and 26 reversals), because the CS1 2021 blocks
+could no longer be counted, and so they were when the first 60~s of each observation interval were also excluded
+(57 and 24; S2). $\varphi$ compares variance with the mean
+and does not show which assumption of a count model fails.
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{Dispersion index $\varphi$ within writers. Baseline with 95\% interval; median and range over the 89
+definitions; number of definitions whose interval exceeds 1; number whose point value and interval lie on the other
+side of 1.5 from the baseline (--: the baseline interval contains 1.5).}
+\label{tab:phi}
+\begin{tabular}{@{}l l r r r r@{}}
+\toprule
+Cell & Baseline & Median & Range & Interval $> 1$ & Reversed at 1.5 \\
+\midrule
+CS1 2019 blocks & 1.44 [1.35, 1.52] & 1.03 & 0.67--3.28 & 43 & -- \\
+CS1 2019 assignments & 1.95 [1.75, 2.15] & 1.25 & 0.74--3.72 & 57 & 54 \\
+CS1 2021 blocks & 1.82 [1.58, 2.11] & 1.21 & 0.56--4.66 & 46 & 49 \\
+CS1 2021 assignments & 3.82 [3.13, 4.56] & 2.28 & 0.63--7.87 & 68 & 19 \\
+CoAuthor sessions & 1.08 [0.98, 1.19] & 1.02 & 0.80--1.37 & 7 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=\textwidth, height=5cm, xmin=0, xmax=461, ymin=0.4, ymax=8.2, ymode=log, log basis y=10,
+  ytick={0.5,1,1.5,2,4,8}, yticklabels={0.5,1,1.5,2,4,8}, ylabel={$\varphi$}, xtick={45,137,229,321,413},
+  xticklabels={CS1 2019 blocks, CS1 2019 assign., CS1 2021 blocks, CS1 2021 assign., CoAuthor sessions},
+  tick label style={font=\scriptsize}, label style={font=\footnotesize}, grid=major, grid style={figband}]
+  \addplot[only marks, mark=*, mark size=0.8pt, color=figc1, error bars/.cd, y dir=both, y explicit,
+    error bar style={color=figc1!50}] table[x expr=(\thisrow{cell}-1)*92+\thisrow{i}, y=phi,
+    y error plus expr=\thisrow{hi}-\thisrow{phi}, y error minus expr=\thisrow{phi}-\thisrow{lo}] {figdata/phi.csv};
+  \addplot[only marks, mark=star, mark size=3.5pt, thick, color=black] table[x expr=(\thisrow{cell}-1)*92+\thisrow{i},
+    y=phi, discard if not={b0}{1}] {figdata/phi.csv};
+  \draw[black, thin] (axis cs:0,1) -- (axis cs:461,1);
+  \draw[black, dashed] (axis cs:0,1.5) -- (axis cs:461,1.5);
+\end{axis}
+\end{tikzpicture}
+\caption{The dispersion index within writers for the 90 definitions in each cell, ordered by value, with 95\%
+intervals; star: baseline. Solid line: 1 (constant rate within a writer); dashed line: 1.5.}
+\label{fig:phi}
+\end{figure}
+
+\paragraph{Components of stall length.}
+\label{sec:res-length}
+A map of what moves needs a side that stays. Is the decomposition of stall length as fragile as the rates? We fitted
+the decomposition for all 90 definitions (Figure~\ref{fig:length}). The lengths are times from onset to resumption, so
+a change of definition changes both the stalls and the point from which they are measured. Under the baseline, the stall-to-stall share was
+0.93 (CS1 2019) and 0.92 (CS1 2021), and the writer share 0.03 in both, which can be read as the intraclass correlation
+of writers. In both CS1 editions, the stall-to-stall share stayed the largest component in every one of the 89
+definitions (0.88 to 1.00), at least 0.83 above the next component, and the writer share stayed small (0.00 to 0.05);
+we did not compute intervals for these shares. The excluded unresumed stalls were 0.5--7\% of the CS1
+stalls, depending on the definition. CoAuthor kept the same order in 86 of 89 definitions (S5). This is a weak contrast: most variance sitting at the lowest level is common for event-level
+outcomes (S5).
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=\textwidth, height=4.6cm, xmin=0, xmax=277, ymin=0, ymax=1.05, ylabel={share of variance},
+  xtick={45,137,229}, xticklabels={CS1 2019, CS1 2021, CoAuthor}, tick label style={font=\footnotesize},
+  label style={font=\footnotesize}, grid=major, grid style={figband},
+  legend style={font=\scriptsize, at={(0.5,0.55)}, anchor=center}, legend cell align=left]
+  \addplot[only marks, mark=*, mark size=0.9pt, color=figc1] table[x expr=(\thisrow{ds}-1)*92+\thisrow{i},
+    y=stall] {figdata/lengths.csv};
+  \addlegendentry{stall to stall}
+  \addplot[only marks, mark=square*, mark size=0.9pt, color=figc2] table[x expr=(\thisrow{ds}-1)*92+\thisrow{i},
+    y=writer] {figdata/lengths.csv};
+  \addlegendentry{writer}
+\end{axis}
+\end{tikzpicture}
+\caption{Shares of the variance of log stall length for the 90 definitions in each dataset, each series ordered by
+value. The remaining shares (assignment, day, block or session) are in S5.}
+\label{fig:length}
+\end{figure}

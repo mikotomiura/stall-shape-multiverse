@@ -1,0 +1,37 @@
+{
+ "seed": 20261107,
+ "git_head": "a7dba8e4",
+ "scripts_dirty": false,
+ "python": "3.14.4",
+ "numpy": "2.5.4",
+ "scipy": "1.18.1",
+ "pandas": "3.1.1",
+ "statsmodels": "0.15.0",
+ "cache_sha256": {
+  "units.pkl": "c6d4373b0d4c8d484ed4344919a86a9fbfe0e0d1b920d9b5658da38b5dec0d36",
+  "configs.pkl": "0fac2ffd31a98ad376f349eb230da1413afaeef8274dcb769c322a76f0722c15",
+  "c3b.json": "18ca5a75d017c5748eb9b9aac295eed87f4d8040e67c7581304de2e13386806b",
+  "prep_summary.json": "62c4f8002069afe9b3ed7cbe363783b0348a8b72cb6ff22ec466733cc1cbbddb"
+ },
+ "scripts_sha256": {
+  "analyze.py": "a5d687b4a552f5e997c2f777c0c194afa0bf0fcd811a7fd5a24760f4bdd6efb2",
+  "c3b.py": "313a425487621cc427436ea43126363e679501904cecaab464b7fc12412cc3f6",
+  "core.py": "8a2a4e00a78c5b9543f2bb974950da49f3f7bb930d46060e246dc4387d64e9b5",
+  "k1_match.py": "98c3c35f7fde820c06b09a2be9f4379b750f0b08dc428b0c86914cc885ad6028",
+  "mutate.py": "b0de7326595329abd3e696d6f1c578425f0a2264ddaf181d176b172ee86ffad5",
+  "prep.py": "7a3b5096ac4a41e72758c0ad51d0cb46e599492c89567e76cde165daa22ff158",
+  "provenance.py": "37bde4ceb28e3cfc65cff07b75b48e4bb16ac5ccedff9152b8c4200eb7d4f0d0",
+  "run_configs.py": "839dc1ad78035636eb5631399b87b5adb7ae983c51da5edfbd83e5b0d7dc13b9"
+ },
+ "imported_sha256": {
+  "20261031-coauthor-pre-request-signal/scripts/convert.py": "23e12a71f00d9b5917a06f4b44cdcda13dde701c71a6f7680fa0f5dfc5206a78",
+  "20261101-klicke-early-stall-trigger/scripts/analyze_item2.py": "9c8ca6a498c034c49021a18221c29321e86d9dc6eade148ce8f48e5b46abcc22",
+  "20261102-stall-decomposition/o1/analyze_o1.py": "c31eb63a4380bfd0a421858eef7ddca2fd245879ff192358bedce34fd42771f9",
+  "20261102-stall-decomposition/types_core.py": "c47b0324576972e15452fbb54c3f586eba1bb91e32ed8aba8fc9937bfaa12b19",
+  "20261103-stall-candidates-c1c2c6/candidates.py": "03b033183493d8cd6f60391aa1bb030d89750dab1406df0101ca51c93c4199e8",
+  "20261104-cs1-landscape/scripts/build_cs1.py": "b64bdf74326f3975661f7700ebae8ec132d264ccb98276fdefef8904bd8bb30e"
+ },
+ "jobs": 8,
+ "run_configs_seconds": 4894,
+ "note": "結果は並列の数によらない。中間は repo の外にあり、ここには SHA-256 だけを置く"
+}

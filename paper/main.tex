@@ -1,0 +1,54 @@
+% Manuscript built with a journal LaTeX class (class jedm, reference style acmtrans). The class files are not part of
+% this directory; BUILD.md says where to obtain them. The supplementary material is an appendix after the references.
+\documentclass[notitlepage,12pt]{jedm}
+\usepackage[T1]{fontenc}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{capt-of}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{decorations.pathreplacing}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=blue, citecolor=blue}
+
+% Figures: the colours are the first two slots of a categorical palette checked for separation under colour-vision
+% deficiencies; each series also has a mark of its own, so that the figures can be read in grey.
+\definecolor{figc1}{HTML}{2A78D6}
+\definecolor{figc2}{HTML}{EB6834}
+\definecolor{figband}{HTML}{E8E8E8}
+% Keep only the rows of a table whose column #1 equals #2.
+\pgfplotsset{discard if not/.style 2 args={x filter/.append code={%
+  \edef\tempa{\thisrow{#1}}\edef\tempb{#2}\ifx\tempa\tempb\else\def\pgfmathresult{inf}\fi}}}
+
+\begin{document}
+
+\title{What moves with the pause definition and the adjustment:\\ a multiverse diagnostic of pause and stall labels in keystroke logs}
+\date{}
+\author{{\large Mikoto Miura}\\Independent Researcher\\ORCID 0009-0000-4196-0508}
+
+\maketitle
+
+\input{sections/abstract}
+
+\input{sections/introduction}
+\input{sections/related}
+\input{sections/methods}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusion}
+\input{sections/availability}
+\input{sections/declarations}
+
+\bibliographystyle{acmtrans}
+\bibliography{references}
+
+\appendix
+\input{appendix/supplement}
+
+\end{document}

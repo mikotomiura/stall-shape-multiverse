@@ -1,0 +1,1557 @@
+{
+ "W15_q0.95_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 91576,
+   "counts": {
+    "sd": {
+     "writer": 0.005283572739204489,
+     "task_common": 0.0773801441298581,
+     "task_in_writer": 0.009784252952680214,
+     "day": 0.011938704829472081,
+     "block": 0.34440333220693703
+    },
+    "log_exposure_slope": 0.9988555487984848,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.00022356606716245192,
+    "task_common": 0.04795231451993593,
+    "task_in_writer": 0.0007666653748892375,
+    "day": 0.001141471139258431,
+    "block": 0.949915982898754
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.25643160862183667,
+     "block": 0.2925395719696248,
+     "day": 0.1010849390566751,
+     "unit": 3.0293984829542873e-05,
+     "stall": 1.9311482352732363
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -192073.20983253204,
+     "powell": -191192.67663990153,
+     "nm": -191191.6924288278
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.016900297768874622,
+    "block": 0.021994823755571203,
+    "day": 0.0026261779482332753,
+    "unit": 2.358652984670584e-10,
+    "stall": 0.9584787002914557
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 18202,
+   "counts": {
+    "sd": {
+     "writer": 0.17900929324946893,
+     "task_common": 0.21122305284550044,
+     "task_in_writer": 0.007853858140963203,
+     "day": 0.00977602623656545,
+     "block": 0.38415971037816116
+    },
+    "log_exposure_slope": 1.0316161153918264,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.1428029321240819,
+    "task_common": 0.19882390506771247,
+    "task_in_writer": 0.0002748856534463092,
+    "day": 0.00042590298686893464,
+    "block": 0.6576723741678904
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.2579724973772068,
+     "block": 0.3381704642732702,
+     "day": 0.16655957884317613,
+     "unit": 5.64890094401128e-05,
+     "stall": 1.8829027270158651
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -37808.607351085724,
+     "powell": -37582.66794709752,
+     "nm": -37582.454280329795
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.01772782978623648,
+    "block": 0.030463521465755046,
+    "day": 0.007390060353684008,
+    "unit": 8.500347409312754e-10,
+    "stall": 0.9444185875442896
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 7721,
+   "counts": {
+    "sd": {
+     "writer": 0.3044648025644717,
+     "session": 0.04753509849892639
+    },
+    "log_exposure_slope": 1.0676816157306062,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.9762044689941121,
+    "session": 0.023795531005888004
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.45987743092684547,
+     "unit": 0.2798871859288758,
+     "stall": 1.4982608884415347
+    },
+    "converged": true,
+    "method": "default",
+    "llf": {
+     "default": -14240.807307837604,
+     "powell": -14240.811412714807,
+     "nm": -14240.807309558826
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.08343976784847801,
+    "unit": 0.030906862871868352,
+    "stall": 0.8856533692796535
+   }
+  }
+ },
+ "W15_q0.99_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 41119,
+   "counts": {
+    "sd": {
+     "writer": 0.24544935132503679,
+     "task_common": 0.12172825341596438,
+     "task_in_writer": 0.011322131365521527,
+     "day": 0.015438149481374022,
+     "block": 0.19945282081941987
+    },
+    "log_exposure_slope": 0.9393460487474404,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.5229129885618629,
+    "task_common": 0.12861405568822817,
+    "task_in_writer": 0.0011126588611557534,
+    "day": 0.0020686934311291835,
+    "block": 0.3452916034576241
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.35235934797550517,
+     "block": 0.3298032054091539,
+     "day": 0.24961941050260653,
+     "unit": 0.10717574287867146,
+     "stall": 1.7717526210011105
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -83036.21806142238,
+     "powell": -82836.43427905967,
+     "nm": -82836.09001566542
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.03603110725524725,
+    "block": 0.03156572420499559,
+    "day": 0.018082676780152077,
+    "unit": 0.003333488935938541,
+    "stall": 0.9109870028236665
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 6658,
+   "counts": {
+    "sd": {
+     "writer": 0.25965084347141865,
+     "task_common": 0.28240606976934324,
+     "task_in_writer": 0.020281890918193678,
+     "day": 0.017773314848708154,
+     "block": 0.2675132773307702
+    },
+    "log_exposure_slope": 1.0191923579522109,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.3071987568303129,
+    "task_common": 0.36340260151011683,
+    "task_in_writer": 0.0018743766424162518,
+    "day": 0.0014393845842281348,
+    "block": 0.3260848804329259
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.328153257308832,
+     "block": 0.34384704190692705,
+     "day": 0.2804899983907681,
+     "unit": 0.1046544843903429,
+     "stall": 1.6743416527462969
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -13083.593238055888,
+     "powell": -13057.515313222,
+     "nm": -13057.474746521322
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.03452576285503742,
+    "block": 0.037907088498334594,
+    "day": 0.025224618352962094,
+    "unit": 0.0035116039505209916,
+    "stall": 0.8988309263431449
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 4561,
+   "counts": {
+    "sd": {
+     "writer": 0.37401657152479684,
+     "session": 0.04199520327836932
+    },
+    "log_exposure_slope": 0.8752745107212939,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.9875497897162251,
+    "session": 0.012450210283775028
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.489958882796602,
+     "unit": 0.2908903778780103,
+     "stall": 1.5318423010875128
+    },
+    "converged": true,
+    "method": "default",
+    "llf": {
+     "default": -8531.352976176237,
+     "powell": -8531.401145165113,
+     "nm": -8531.352976209771
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.08986901440593746,
+    "unit": 0.03167739200960976,
+    "stall": 0.8784535935844527
+   }
+  }
+ },
+ "W15_q0.995_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 24094,
+   "counts": {
+    "sd": {
+     "writer": 0.2787255805654871,
+     "task_common": 0.13810752318348044,
+     "task_in_writer": 0.02231704157288989,
+     "day": 0.025939057006700506,
+     "block": 0.1817059356161247
+    },
+    "log_exposure_slope": 0.9117013923947731,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.5932661687030663,
+    "task_common": 0.14565674453439456,
+    "task_in_writer": 0.0038033752023383834,
+    "day": 0.005138120591638956,
+    "block": 0.2521355909685618
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.38490711618679746,
+     "block": 0.34779485893494383,
+     "day": 0.21082933759847972,
+     "unit": 0.2169684480090086,
+     "stall": 1.6900434808724356
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -47704.05383903222,
+     "powell": -47628.94042946168,
+     "nm": -47628.68335219458
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.04605493835388455,
+    "block": 0.03760197362862242,
+    "day": 0.013817402634489247,
+    "unit": 0.014633812606625178,
+    "stall": 0.8878918727763786
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 3760,
+   "counts": {
+    "sd": {
+     "writer": 0.2883790441674319,
+     "task_common": 0.2706871481270868,
+     "task_in_writer": 0.22618055759671674,
+     "day": 0.029703720980956756,
+     "block": 0.036121264906783565
+    },
+    "log_exposure_slope": 1.0006514573372318,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.3964295252433788,
+    "task_common": 0.3492801214361422,
+    "task_in_writer": 0.2438648108396527,
+    "day": 0.004205913240052935,
+    "block": 0.006219629240773331
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.3521051397390932,
+     "block": 0.3970383565196921,
+     "day": 0.07229705184947517,
+     "unit": 0.20489558674919564,
+     "stall": 1.6267571514366743
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -7316.142561610111,
+     "powell": -7291.352533487177,
+     "nm": -7291.351446964043
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.04167097070516531,
+    "block": 0.052985107167367644,
+    "day": 0.0017568313142098156,
+    "unit": 0.014110879932508577,
+    "stall": 0.8894762108807487
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 2927,
+   "counts": {
+    "sd": {
+     "writer": 0.43966055873560766,
+     "session": 0.1132515355072838
+    },
+    "log_exposure_slope": 0.9997371458590099,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.9377767562842746,
+    "session": 0.06222324371572535
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.48945404837130563,
+     "unit": 0.2606609654890771,
+     "stall": 1.5652611339427225
+    },
+    "converged": true,
+    "method": "default",
+    "llf": {
+     "default": -5536.145504532284,
+     "powell": -5536.145510507227,
+     "nm": -5536.145504827291
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.08687607013246076,
+    "unit": 0.024639297217140584,
+    "stall": 0.8884846326503986
+   }
+  }
+ },
+ "W30_q0.95_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 63434,
+   "counts": {
+    "sd": {
+     "writer": 0.007209454537154613,
+     "task_common": 0.055264752328749146,
+     "task_in_writer": 0.011631638678543749,
+     "day": 0.01343424958892106,
+     "block": 0.3051167796946678
+    },
+    "log_exposure_slope": 1.0267290680643768,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.0005385123096702974,
+    "task_common": 0.031643701290892244,
+    "task_in_writer": 0.001401756652928764,
+    "day": 0.0018698968298018245,
+    "block": 0.9645461329167069
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.24452202069063292,
+     "block": 0.34607508349386595,
+     "day": 7.889255027072673e-05,
+     "unit": 4.109698847277038e-05,
+     "stall": 1.943775228101536
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -133880.89140594547,
+     "powell": -133018.86600611568,
+     "nm": -133018.83704171574
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.015107054280453726,
+    "block": 0.030261085471698753,
+    "day": 1.5725911525582579e-09,
+    "unit": 4.267404734074127e-10,
+    "stall": 0.9546318582485159
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 13836,
+   "counts": {
+    "sd": {
+     "writer": 0.15217637914806956,
+     "task_common": 0.17131145783348128,
+     "task_in_writer": 0.009874527615273708,
+     "day": 0.011729266155252454,
+     "block": 0.323398302243575
+    },
+    "log_exposure_slope": 1.0396469258847967,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.14719455886548113,
+    "task_common": 0.18653918945393852,
+    "task_in_writer": 0.0006197691018476876,
+    "day": 0.0008744579813799491,
+    "block": 0.6647720245973527
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.25700155113669904,
+     "block": 0.3535209202780474,
+     "day": 0.00011068447478048465,
+     "unit": 3.6527172812299055e-05,
+     "stall": 1.886872506989747
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -28732.950045200792,
+     "powell": -28604.363644445402,
+     "nm": -28604.360777142138
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.017607106414717445,
+    "block": 0.033315530887098294,
+    "day": 3.265802500159601e-09,
+    "unit": 3.556711331769211e-10,
+    "stall": 0.9490773590767106
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 2423,
+   "counts": {
+    "sd": {
+     "writer": 0.6249675970060354,
+     "session": 0.15453017350624276
+    },
+    "log_exposure_slope": 1.2739146922966003,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.9423844522437029,
+    "session": 0.05761554775629702
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.676816043915895,
+     "unit": 0.19801914242682847,
+     "stall": 1.56328795840267
+    },
+    "converged": true,
+    "method": "powell",
+    "llf": {
+     "default": -4577.917712069988,
+     "powell": -4577.917711820777,
+     "nm": -4577.917711989805
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.15574801642245867,
+    "unit": 0.013332008589266049,
+    "stall": 0.8309199749882753
+   }
+  }
+ },
+ "W30_q0.99_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 32478,
+   "counts": {
+    "sd": {
+     "writer": 0.20530604664660076,
+     "task_common": 0.07833194387958631,
+     "task_in_writer": 0.020473283234010736,
+     "day": 0.030906353228319847,
+     "block": 0.14055812845333357
+    },
+    "log_exposure_slope": 0.9743894798967405,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.6072046157032328,
+    "task_common": 0.08839127363555828,
+    "task_in_writer": 0.006038187194860707,
+    "day": 0.013760274930870718,
+    "block": 0.2846056485354775
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.3388105207895969,
+     "block": 0.35328283067012406,
+     "day": 0.17165087643634394,
+     "unit": 4.5924748505631e-05,
+     "stall": 1.8157545946460836
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -66441.00247803301,
+     "powell": -66200.09928126607,
+     "nm": -66200.04131825652
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.032190577687028925,
+    "block": 0.034999356403174295,
+    "day": 0.00826241578101735,
+    "unit": 5.914371067046178e-10,
+    "stall": 0.9245476495373423
+   },
+   "k5": {
+    "counts_all0.3": {
+     "writer": {
+      "true": 0.3,
+      "est": 0.004472085493413394,
+      "ok": false
+     },
+     "task_common": {
+      "true": 0.3,
+      "est": 0.16906308542725448,
+      "ok": false
+     },
+     "task_in_writer": {
+      "true": 0.3,
+      "est": 0.005913045548104903,
+      "ok": false
+     },
+     "day": {
+      "true": 0.3,
+      "est": 0.007115169581834038,
+      "ok": false
+     },
+     "block": {
+      "true": 0.3,
+      "est": 0.5721115784394873,
+      "ok": false
+     }
+    },
+    "lengths_all0.3": {
+     "writer": {
+      "true": 0.3,
+      "est": 0.3033742866170937,
+      "ok": true
+     },
+     "unit": {
+      "true": 0.3,
+      "est": 0.2850765357424777,
+      "ok": true
+     },
+     "day": {
+      "true": 0.3,
+      "est": 0.29456898598151343,
+      "ok": true
+     },
+     "block": {
+      "true": 0.3,
+      "est": 0.3184622028802685,
+      "ok": true
+     }
+    },
+    "counts_writer0.5": {
+     "writer": {
+      "true": 0.5,
+      "est": 0.5039070400175779,
+      "ok": true
+     },
+     "task_common": {
+      "true": 0.2,
+      "est": 0.09936153722949204,
+      "ok": false
+     },
+     "task_in_writer": {
+      "true": 0.2,
+      "est": 0.009428765911216594,
+      "ok": false
+     },
+     "day": {
+      "true": 0.2,
+      "est": 0.011124276024933362,
+      "ok": false
+     },
+     "block": {
+      "true": 0.2,
+      "est": 0.27603399696899084,
+      "ok": false
+     }
+    },
+    "lengths_writer0.5": {
+     "writer": {
+      "true": 0.5,
+      "est": 0.49311466986717684,
+      "ok": true
+     },
+     "unit": {
+      "true": 0.2,
+      "est": 0.17345093727656613,
+      "ok": true
+     },
+     "day": {
+      "true": 0.2,
+      "est": 0.16315110948486838,
+      "ok": true
+     },
+     "block": {
+      "true": 0.2,
+      "est": 0.21054143277298593,
+      "ok": true
+     }
+    }
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 5834,
+   "counts": {
+    "sd": {
+     "writer": 0.2170551736117944,
+     "task_common": 0.24437845709981998,
+     "task_in_writer": 0.019292777891432213,
+     "day": 0.21595331576564156,
+     "block": 0.015947407704980345
+    },
+    "log_exposure_slope": 1.0352326748432732,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.30573736017210945,
+    "task_common": 0.38755564287207783,
+    "task_in_writer": 0.002415448357229815,
+    "day": 0.3026411516106986,
+    "block": 0.0016503969878844118
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.3085430004261041,
+     "block": 0.29213736656045713,
+     "day": 0.29295010354016965,
+     "unit": 0.09623892075618218,
+     "stall": 1.7368804653422598
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -11679.968025320111,
+     "powell": -11640.979601577961,
+     "nm": -11640.942006475085
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.02891489664326377,
+    "block": 0.02592175892628331,
+    "day": 0.026066190141571265,
+    "unit": 0.0028131425224686567,
+    "stall": 0.916284011766413
+   },
+   "k5": {
+    "counts_all0.3": {
+     "writer": {
+      "true": 0.3,
+      "est": 0.3479262069156911,
+      "ok": true
+     },
+     "task_common": {
+      "true": 0.3,
+      "est": 0.2959574811866254,
+      "ok": true
+     },
+     "task_in_writer": {
+      "true": 0.3,
+      "est": 0.01570002547307858,
+      "ok": false
+     },
+     "day": {
+      "true": 0.3,
+      "est": 0.0186713197229764,
+      "ok": false
+     },
+     "block": {
+      "true": 0.3,
+      "est": 0.45999025137610977,
+      "ok": false
+     }
+    },
+    "lengths_all0.3": {
+     "writer": {
+      "true": 0.3,
+      "est": 0.28607799424710356,
+      "ok": true
+     },
+     "unit": {
+      "true": 0.3,
+      "est": 0.19741767880783623,
+      "ok": false
+     },
+     "day": {
+      "true": 0.3,
+      "est": 0.2004620976199282,
+      "ok": false
+     },
+     "block": {
+      "true": 0.3,
+      "est": 0.3667600387017558,
+      "ok": true
+     }
+    },
+    "counts_writer0.5": {
+     "writer": {
+      "true": 0.5,
+      "est": 0.3746322774339117,
+      "ok": true
+     },
+     "task_common": {
+      "true": 0.2,
+      "est": 0.18852611793539498,
+      "ok": true
+     },
+     "task_in_writer": {
+      "true": 0.2,
+      "est": 0.03169802998733914,
+      "ok": false
+     },
+     "day": {
+      "true": 0.2,
+      "est": 0.018966578779972088,
+      "ok": false
+     },
+     "block": {
+      "true": 0.2,
+      "est": 0.2848025728812666,
+      "ok": false
+     }
+    },
+    "lengths_writer0.5": {
+     "writer": {
+      "true": 0.5,
+      "est": 0.5937796289593819,
+      "ok": true
+     },
+     "unit": {
+      "true": 0.2,
+      "est": 0.21888369825015427,
+      "ok": true
+     },
+     "day": {
+      "true": 0.2,
+      "est": 0.1883905385392982,
+      "ok": true
+     },
+     "block": {
+      "true": 0.2,
+      "est": 0.17391232258807332,
+      "ok": true
+     }
+    }
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 1461,
+   "counts": {
+    "sd": {
+     "writer": 0.7455191952338585,
+     "session": 0.10559044893471803
+    },
+    "log_exposure_slope": 1.2937913794218376,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.980334459756043,
+    "session": 0.01966554024395699
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.642423484872604,
+     "unit": 0.33870272836795223,
+     "stall": 1.5838325711392964
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -2804.5847202302093,
+     "powell": -2804.584733174008,
+     "nm": -2804.584720070404
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.13594015529557243,
+    "unit": 0.0377869930701482,
+    "stall": 0.8262728516342794
+   },
+   "k5": {
+    "counts_all0.3": {
+     "writer": {
+      "true": 0.3,
+      "est": 0.31049548120818954,
+      "ok": true
+     },
+     "session": {
+      "true": 0.3,
+      "est": 0.25238168336985356,
+      "ok": true
+     }
+    },
+    "lengths_all0.3": {
+     "writer": {
+      "true": 0.3,
+      "est": 0.23294009370878563,
+      "ok": true
+     },
+     "unit": {
+      "true": 0.3,
+      "est": 0.23018906053471314,
+      "ok": true
+     }
+    },
+    "counts_writer0.5": {
+     "writer": {
+      "true": 0.5,
+      "est": 0.41437390609488256,
+      "ok": true
+     },
+     "session": {
+      "true": 0.2,
+      "est": 0.18346913682765395,
+      "ok": true
+     }
+    },
+    "lengths_writer0.5": {
+     "writer": {
+      "true": 0.5,
+      "est": 0.49218856276679085,
+      "ok": true
+     },
+     "unit": {
+      "true": 0.2,
+      "est": 0.24083585543647168,
+      "ok": true
+     }
+    }
+   }
+  }
+ },
+ "W30_q0.995_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 20081,
+   "counts": {
+    "sd": {
+     "writer": 0.24066144310823606,
+     "task_common": 0.10447405713217126,
+     "task_in_writer": 0.04769889158931122,
+     "day": 0.05996218651381939,
+     "block": 0.07656119555326747
+    },
+    "log_exposure_slope": 0.951294222260625,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.7188967078844798,
+    "task_common": 0.13547850088096774,
+    "task_in_writer": 0.028240347469236895,
+    "day": 0.04462809856187647,
+    "block": 0.07275634520343918
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.3708749246860226,
+     "block": 0.4027182219476925,
+     "day": 0.12497475603260884,
+     "unit": 0.14641826711095093,
+     "stall": 1.7552021566776526
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -40547.74304554178,
+     "powell": -40443.53226580113,
+     "nm": -40443.39672232939
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.04024793941232099,
+    "block": 0.04745601534405729,
+    "day": 0.004570179980104504,
+    "unit": 0.006273056995592647,
+    "stall": 0.9014528082679245
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 3404,
+   "counts": {
+    "sd": {
+     "writer": 0.2538488439676047,
+     "task_common": 0.24735939393451006,
+     "task_in_writer": 0.20117485496811693,
+     "day": 0.03219475252275794,
+     "block": 0.035811824771987986
+    },
+    "log_exposure_slope": 1.0414903904394384,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.3826189479876238,
+    "task_common": 0.3633062839015031,
+    "task_in_writer": 0.240305376233965,
+    "day": 0.006154407880092532,
+    "block": 0.0076149839968156436
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.33781279147822957,
+     "block": 0.24451909366279986,
+     "day": 0.2993333620140779,
+     "unit": 0.20835799236662303,
+     "stall": 1.6803519371627662
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -6737.853467271283,
+     "powell": -6700.705390759102,
+     "nm": -6700.682738446512
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.036453398764150574,
+    "block": 0.019099033934571533,
+    "day": 0.028621743986783625,
+    "unit": 0.013867755430875438,
+    "stall": 0.9019580678836189
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 929,
+   "counts": {
+    "sd": {
+     "writer": 0.7982816049190428,
+     "session": 0.26663414859358986
+    },
+    "log_exposure_slope": 1.3931552616937966,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.8996343033917553,
+    "session": 0.1003656966082447
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.7260380576733887,
+     "unit": 0.24297255967719103,
+     "stall": 1.6410297655127413
+    },
+    "converged": true,
+    "method": "powell",
+    "llf": {
+     "default": -1813.833285834417,
+     "powell": -1813.7368704722635,
+     "nm": -1813.736870488608
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.16075262361572543,
+    "unit": 0.01800336784240914,
+    "stall": 0.8212440085418654
+   }
+  }
+ },
+ "W60_q0.95_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 40343,
+   "counts": {
+    "sd": {
+     "writer": 0.017472698693221836,
+     "task_common": 6.423566862194783e-05,
+     "task_in_writer": 0.06373230982120658,
+     "day": 0.09681969847971007,
+     "block": 0.1570254457386067
+    },
+    "log_exposure_slope": 1.0574771196151835,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.007950778607134045,
+    "task_common": 1.0745884860259652e-07,
+    "task_in_writer": 0.10578132491872454,
+    "day": 0.24412774326626946,
+    "block": 0.6421400457490233
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.26443784091856526,
+     "block": 0.3738670972069253,
+     "day": 2.6690909124363515e-05,
+     "unit": 2.0019409400787047e-05,
+     "stall": 1.9802870472443324
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -85860.51590651253,
+     "powell": -85476.02105722038,
+     "nm": -85475.99240357216
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.016926481806580237,
+    "block": 0.03383404991391431,
+    "day": 1.7244326094133138e-10,
+    "unit": 9.701123105549006e-11,
+    "stall": 0.9492394680100509
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 9671,
+   "counts": {
+    "sd": {
+     "writer": 0.11655559403765219,
+     "task_common": 0.1426913533515608,
+     "task_in_writer": 0.012584323341016744,
+     "day": 0.01586589527134942,
+     "block": 0.2418909386821591
+    },
+    "log_exposure_slope": 1.0676491190423238,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.14628614857566233,
+    "task_common": 0.21924630140101756,
+    "task_in_writer": 0.0017052839269731156,
+    "day": 0.002710604332485111,
+    "block": 0.630051661763862
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.25079938005674385,
+     "block": 0.35157103698759584,
+     "day": 0.12434345310235824,
+     "unit": 5.3836108232217857e-05,
+     "stall": 1.8999915832869185
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -20209.176617930243,
+     "powell": -20084.344091385523,
+     "nm": -20084.27128305896
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.016500906031002023,
+    "block": 0.03242507981199526,
+    "day": 0.004056025918369111,
+    "unit": 7.603301091468813e-10,
+    "stall": 0.9470179874783035
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 394,
+   "counts": {
+    "sd": {
+     "writer": 1.138845902712367,
+     "session": 0.6276183101062796
+    },
+    "log_exposure_slope": 1.574767858662909,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.7670408484899192,
+    "session": 0.23295915151008084
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.668553601264577,
+     "unit": 0.6060821352317329,
+     "stall": 1.660528310759788
+    },
+    "converged": true,
+    "method": "default",
+    "llf": {
+     "default": -794.9520915556218,
+     "powell": -794.9520916904114,
+     "nm": -794.9520915764626
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.12514200700700295,
+    "unit": 0.10284747096263874,
+    "stall": 0.7720105220303584
+   }
+  }
+ },
+ "W60_q0.99_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 23058,
+   "counts": {
+    "sd": {
+     "writer": 0.020762635269826975,
+     "task_common": 5.093722761391369e-05,
+     "task_in_writer": 0.055123371253104424,
+     "day": 0.08401004793362557,
+     "block": 0.11616477520824851
+    },
+    "log_exposure_slope": 1.0364723048048756,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.017945794012140276,
+    "task_common": 1.0801108682285695e-07,
+    "task_in_writer": 0.12649380876061897,
+    "day": 0.29380568412052127,
+    "block": 0.5617546050956327
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.32715081992007483,
+     "block": 0.39445738866032704,
+     "day": 0.0951641303448066,
+     "unit": 3.281128917905327e-05,
+     "stall": 1.863893519552543
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -47800.49275364594,
+     "powell": -47650.67558808268,
+     "nm": -47650.55613762046
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.028572866446062682,
+    "block": 0.041539185412599204,
+    "day": 0.0024177108049771136,
+    "unit": 2.8741165401042747e-10,
+    "stall": 0.9274702370489494
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 4776,
+   "counts": {
+    "sd": {
+     "writer": 0.193116907287561,
+     "task_common": 0.1838559167417996,
+     "task_in_writer": 0.10874530890724712,
+     "day": 0.049065687025651526,
+     "block": 0.039306295173847774
+    },
+    "log_exposure_slope": 1.0604407072140436,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.4292845361512512,
+    "task_common": 0.3890987810806592,
+    "task_in_writer": 0.13612118199702156,
+    "day": 0.027711524450533594,
+    "block": 0.0177839763205344
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.3071607634346788,
+     "block": 0.2303237237452127,
+     "day": 0.26249782944987315,
+     "unit": 0.09100225680982804,
+     "stall": 1.76864325097797
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -9654.125184066863,
+     "powell": -9599.947655476746,
+     "nm": -9599.851361325254
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.02814097141490383,
+    "block": 0.01582285889185344,
+    "day": 0.020552234267313046,
+    "unit": 0.0024700852017163263,
+    "stall": 0.9330138502242133
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 249,
+   "counts": {
+    "sd": {
+     "writer": 1.0131882155183123,
+     "session": 0.46510182395337246
+    },
+    "log_exposure_slope": 1.5542813174658519,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.8259514711643313,
+    "session": 0.17404852883566882
+   },
+   "lengths": {
+    "sd": {
+     "writer": 1.0474382117104706,
+     "unit": 1.0351234227350716,
+     "stall": 1.4583108564103062
+    },
+    "converged": true,
+    "method": "default",
+    "llf": {
+     "default": -509.800357836928,
+     "powell": -509.800575594581,
+     "nm": -509.8003578554467
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.25542627106088284,
+    "unit": 0.249455456626288,
+    "stall": 0.49511827231282923
+   }
+  }
+ },
+ "W60_q0.995_net_replay": {
+  "CS1 2019": {
+   "n_rows": 2967,
+   "n_lengths": 15438,
+   "counts": {
+    "sd": {
+     "writer": 0.0252921384502611,
+     "task_common": 4.564021783897416e-05,
+     "task_in_writer": 0.07180020994826697,
+     "day": 0.10935333250245657,
+     "block": 0.1491918264481764
+    },
+    "log_exposure_slope": 1.010033403960403,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.015987783378091865,
+    "task_common": 5.20610078696374e-08,
+    "task_in_writer": 0.1288453004571301,
+    "day": 0.29886922635108043,
+    "block": 0.5562976377526897
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.40807625377768747,
+     "block": 0.3706541109996217,
+     "day": 0.08386647023471916,
+     "unit": 0.10337846130814791,
+     "stall": 1.807860079588085
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -31613.450345849313,
+     "powell": -31522.91458699311,
+     "nm": -31522.81633270491
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.04638627240419886,
+    "block": 0.03826876697905636,
+    "day": 0.001959221583565985,
+    "unit": 0.0029769185646310744,
+    "stall": 0.9104088204685478
+   }
+  },
+  "CS1 2021": {
+   "n_rows": 629,
+   "n_lengths": 2915,
+   "counts": {
+    "sd": {
+     "writer": 0.23102381815410822,
+     "task_common": 0.21382449368219317,
+     "task_in_writer": 0.1536063551551407,
+     "day": 0.03428656739499237,
+     "block": 0.03033665150825019
+    },
+    "log_exposure_slope": 1.0508374465337695,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.42771611491122385,
+    "task_common": 0.36640129805144317,
+    "task_in_writer": 0.1890864756477542,
+    "day": 0.009420850555795383,
+    "block": 0.007375260833783467
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.3027459642158916,
+     "block": 0.2735548382513149,
+     "day": 0.22060290489361947,
+     "unit": 0.23264017252355668,
+     "stall": 1.7048795222129884
+    },
+    "converged": true,
+    "method": "nm",
+    "llf": {
+     "default": -5840.8356701066,
+     "powell": -5777.052400500865,
+     "nm": -5776.993878087478
+    },
+    "converged_by_method": {
+     "default": false,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.028859676484150398,
+    "block": 0.02356261755107237,
+    "day": 0.015323472289138962,
+    "unit": 0.017041356268667374,
+    "stall": 0.9152128774069709
+   }
+  },
+  "CoAuthor": {
+   "n_rows": 1154,
+   "n_lengths": 178,
+   "counts": {
+    "sd": {
+     "writer": 1.0420643696609275,
+     "session": 0.3953247507342765
+    },
+    "log_exposure_slope": 1.6455922020685911,
+    "converged": true,
+    "finite": true
+   },
+   "counts_share": {
+    "writer": 0.874187571394041,
+    "session": 0.12581242860595887
+   },
+   "lengths": {
+    "sd": {
+     "writer": 0.786350148041313,
+     "unit": 1.0593158261171993,
+     "stall": 1.5724307952715255
+    },
+    "converged": true,
+    "method": "default",
+    "llf": {
+     "default": -373.0277082367437,
+     "powell": -373.02775206995364,
+     "nm": -373.02770825468644
+    },
+    "converged_by_method": {
+     "default": true,
+     "powell": true,
+     "nm": true
+    }
+   },
+   "lengths_share": {
+    "writer": 0.1467698532773924,
+    "unit": 0.26635192238639993,
+    "stall": 0.5868782243362076
+   }
+  }
+ }
+}

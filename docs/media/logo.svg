@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 96" width="460" height="96" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="stall-shape multiverse">
+<rect width="460" height="96" rx="18" fill="#ffffff"/>
+<rect x="24" y="33" width="3" height="30" rx="1.5" fill="#0b0b0b"/>
+<rect x="31" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="36" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="44" y="33" width="3" height="30" rx="1.5" fill="#0b0b0b"/>
+<rect x="50" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="55" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="63" y="33" width="3" height="30" rx="1.5" fill="#0b0b0b"/>
+<rect x="68" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="74" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="81" y="33" width="3" height="30" rx="1.5" fill="#0b0b0b"/>
+<rect x="86" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="92" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="98" y="33" width="3" height="30" rx="1.5" fill="#0b0b0b"/>
+<rect x="103" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="164" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="170" y="33" width="3" height="30" rx="1.5" fill="#0b0b0b"/>
+<rect x="175" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="182" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="188" y="33" width="3" height="30" rx="1.5" fill="#0b0b0b"/>
+<rect x="194" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="201" y="37" width="3" height="22" rx="1.5" fill="#0b0b0b"/>
+<rect x="207" y="33" width="3" height="30" rx="1.5" fill="#0b0b0b"/>
+<rect x="106" y="26" width="58" height="44" rx="8" fill="#2a78d6" fill-opacity="0.16"/>
+<path d="M106 76 v6 h58 v-6" fill="none" stroke="#2a78d6" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="164" cy="20" r="6" fill="#eb6834"/>
+<text x="226" y="45" font-size="27" font-weight="700" fill="#0b0b0b">stall-shape</text>
+<text x="226" y="73" font-size="19" fill="#2a78d6" letter-spacing="2">MULTIVERSE</text>
+</svg>
